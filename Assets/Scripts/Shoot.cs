@@ -37,14 +37,13 @@ public class Shoot : MonoBehaviour
     {
         Fire();
         MinDelay += Time.deltaTime;
-
         if(MaxBullCount==0)
         {
             Reload();
         }
     }
 
-    public void Fire()
+    public void Fire() // 사격
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -69,10 +68,9 @@ public class Shoot : MonoBehaviour
         }
         else
             return;
-        
     }
 
-    public void Reload()
+    public void Reload() // 장전
     {
         reloadtime += Time.deltaTime;
         ReloadingText.gameObject.SetActive(true);
@@ -96,5 +94,4 @@ public class Shoot : MonoBehaviour
     {
         ReloadingText.gameObject.SetActive(false);
     }
-
 }

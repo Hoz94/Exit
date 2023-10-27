@@ -67,6 +67,15 @@ public class Last_Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isDead)
+        {
+            BSlider.gameObject.SetActive(false);
+            StopAllCoroutines();
+            animator.SetTrigger("isDead");
+            navagent.velocity = Vector3.zero;
+            Destroy(gameObject, 6f);
+        }
+
         if(CanSeePlayer()&&portal.ispaze3==true)
         {
             B_Hp_Bar.gameObject.SetActive(true);
@@ -91,12 +100,6 @@ public class Last_Boss : MonoBehaviour
         roartime += Time.deltaTime;
         skillcool += Time.deltaTime;
         farcool += Time.deltaTime;
-
-        if(B_Hp<=0)
-        {
-            BSlider.gameObject.SetActive(false);
-        }
-
     }
 
     void Trace()
@@ -256,10 +259,6 @@ public class Last_Boss : MonoBehaviour
         if (B_Hp <= 0)
         {
             isDead = true;
-            animator.SetTrigger("isDead");
-            navagent.velocity = Vector3.zero;
-            Destroy(gameObject, 1.5f);
-
         }
         
         yield return new WaitForSeconds(0.8f);

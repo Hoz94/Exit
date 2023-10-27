@@ -1,8 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+
+
 
 public class Boss : MonoBehaviour
 {
@@ -11,7 +14,7 @@ public class Boss : MonoBehaviour
 
     [SerializeField]
     private Slider boss_hpbar;
-    
+    public List<string> Soundlist = new List<string>();
     private Player player;
     public Transform playerTr;
     public Transform[] waypoints;
@@ -56,7 +59,11 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        if(!isDead) { Theaudio.Play(); }
+        if(this.gameObject!=null)
+        {
+            StartCoroutine(SoundCo());
+        }
+
         if (CanSeePlayer() && !isAttack)
         {
             Trace();
@@ -71,8 +78,10 @@ public class Boss : MonoBehaviour
             navagent.velocity = Vector3.zero;
             navagent.acceleration = 0f;
             _animator.SetTrigger("isDead");
+            Theaudio.Stop();
             cc.enabled = false;
             Destroy(gameObject, 1.5f);
+            
         }
 
     }
@@ -135,11 +144,8 @@ public class Boss : MonoBehaviour
         {
             isAttack = true;
             StartCoroutine(AttackCo());
-            
         }
-
     }
-
 
     void OnHit(int damage)
     {
@@ -154,14 +160,24 @@ public class Boss : MonoBehaviour
             player.GetComponent<Player>().p_power += 5f;
             player.GetComponent<Player>().p_Hp += 5;
         }
-        
         navagent.speed = 0;
-
-
-        
         yield return new WaitForSeconds(0.5f);
-
         navagent.speed = patrolSpeed;
+    }
+
+    IEnumerator SoundCo()
+    {
+        int a = Random.RandomRange(0, 3);
+        switch (a)
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+        }
+        yield return new WaitForSecondsRealtime(1.5f);
     }
 
     bool CanSeePlayer()

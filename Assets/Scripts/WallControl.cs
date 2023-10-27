@@ -13,11 +13,7 @@ public class WallControl : MonoBehaviour
     {
         ani = GetComponent<Animator>();    
         wallaudio = GetComponent<AudioSource>();
-    }
-
-    private void Start()
-    {
-       
+        wallaudio.clip = wallsound;
     }
 
     public void WallOpen()

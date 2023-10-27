@@ -52,19 +52,16 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Trigger") || collision.gameObject.CompareTag("Ground"))
         {
-            /*Destroy(this.gameObject);*/
             this.gameObject.SetActive(false);
         }
-
         else
         {
             StartCoroutine(falseBullet());
-            
         }       
     }
     IEnumerator falseBullet()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSecondsRealtime(1.5f);
         this.gameObject.SetActive(false);
     }
 

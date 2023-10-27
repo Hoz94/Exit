@@ -57,6 +57,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         Theaudio = GetComponent<AudioSource>();
+        Theaudio.clip = zombiesound;
         _animator = this.gameObject.GetComponent<Animator>();
         cc = GetComponent<CapsuleCollider>();
     }
@@ -65,8 +66,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.gameObject!=null) { Theaudio.Play(); }
-        if (isDead) return;
+        //if(!isDead) { Theaudio.Play(); }
+
+        if (isDead)
+        {
+            return;
+        }
         Patrol();
         dist = Vector3.Distance(transform.position, player.position);
 
@@ -113,9 +118,6 @@ public class Enemy : MonoBehaviour
             }
             else
                 _animator.SetBool("isTrace", true);
-                
-            
-
         }
     }
 
@@ -161,6 +163,7 @@ public class Enemy : MonoBehaviour
         {
             isDead = true;
             m_hpbar.value = 0;
+            Theaudio.Stop();
             _animator.SetTrigger("isDead");
 
             cc.enabled = false;

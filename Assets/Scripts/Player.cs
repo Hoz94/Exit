@@ -130,7 +130,7 @@ public class Player : MonoBehaviour
                 }*/
     }
 
-    void FlashControl()
+    void FlashControl() // 후레쉬 조작
     {
         if(Input.GetKeyDown(KeyCode.T))
         {
@@ -212,5 +212,4 @@ public class Player : MonoBehaviour
             }
         }
     }
-
 }
