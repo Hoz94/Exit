@@ -131,11 +131,8 @@ public class Enemy : MonoBehaviour
             player.gameObject.GetComponent<Player>().TakeDamage(m_Atk);
             isatk = true;
         }
-
         yield return new WaitForSeconds(attackInterval);
-
         isatk = false;
-
         _animator.SetBool("isAttack", false);
         isAttack = false;
         isTrace = true;

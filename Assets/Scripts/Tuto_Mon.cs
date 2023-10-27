@@ -6,6 +6,8 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 public class Tuto_Mon : MonoBehaviour
 {
+    private AudioSource TutorialAudio;
+    public AudioClip TutorialMonsterSound;
     public int atk = 5;
     public int hp = 2500;
     public int maxhp = 2500;
@@ -27,6 +29,8 @@ public class Tuto_Mon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TutorialAudio=GetComponent<AudioSource>();
+        TutorialAudio.clip = TutorialMonsterSound;
         nav = GetComponent<NavMeshAgent>();
         ani=GetComponent<Animator>();
         gm = Gamemanager._instance;
@@ -35,6 +39,7 @@ public class Tuto_Mon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         HandleHP();
         if (!isAttack&&!isdead)
         {
@@ -43,10 +48,14 @@ public class Tuto_Mon : MonoBehaviour
 
         if(hp<=0&&!isdead)
         {
+            CapsuleCollider cc=this.gameObject.GetComponent<CapsuleCollider>();
+            cc.enabled = false;
             StopCoroutine(AttackCo());
+            
             nav.velocity = Vector3.zero;
             nav.angularSpeed = 0;
             StartCoroutine(DieCo());
+            TutorialAudio.Stop();
         }
 
         
