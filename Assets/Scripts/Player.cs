@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         gameover=GetComponent<GameObject>();
         p_power = 0f;
         /*        p_stamina = 100f;*/
-        js.gameObject.SetActive(false);//키보드 이동일때 조이스틱 false
+        js.gameObject.SetActive(true);//키보드 이동일때 조이스틱 false
         flashstate = 0;
     
     }
@@ -61,8 +61,8 @@ public class Player : MonoBehaviour
     void Update()
     {
         TutorialTime += Time.deltaTime;
-        Cursor.visible = false; // 마우스커서 안보이게
-        Cursor.lockState = CursorLockMode.Locked; // 
+        //Cursor.visible = false; // 마우스커서 안보이게
+        //Cursor.lockState = CursorLockMode.Locked;
 /*        MouseRotation();*/
         if (p_Hp >= 100)
         {
@@ -90,9 +90,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
-        //StopToWall();
-        /*        joyMove();*/
+        //Move();
+        joyMove();
     }
 
     void HandleTutoTrigger()
@@ -148,32 +147,6 @@ public class Player : MonoBehaviour
         {
             speed=4f;
         }
-
-        /*        if (Input.GetKey(KeyCode.LeftShift) && p_stamina > 1f && isMoving && statime >= 1f) //빨리 달리기
-                {
-                    isrun = true;
-                    if (isrun)
-                    {
-                        runspeed = speed * 2f;
-                        nowspeed = runspeed;
-                        p_stamina -= 50f * Time.deltaTime;
-                    }
-
-                    if (p_stamina <= 1f)
-                    {
-                        statime = 0f;
-                        isrun = false;
-                    }
-                }
-                else
-                {
-                    nowspeed = speed;
-                    p_stamina += 30f * Time.deltaTime;
-                }
-                if (p_stamina >= 100f)
-                {
-                    p_stamina = ui.MaxSta;
-                }*/
     }
 
     void FlashControl() // 후레쉬 조작
@@ -188,10 +161,6 @@ public class Player : MonoBehaviour
             else
                 Flashlight.SetActive(true);
         }
-    }
-    void StopToWall()
-    {
-        iswall = Physics.Raycast(transform.position, transform.forward, 0.6f, LayerMask.GetMask("Wall"));
     }
 
     void MouseRotation()

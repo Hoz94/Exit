@@ -66,12 +66,12 @@ public class Gamemanager : MonoBehaviour
 
         if (player.p_power >= 100 && isSkill==false)
         {
-            //skillbutton.gameObject.SetActive(true);
-            skilltxt.SetActive(true);
+            skillbutton.gameObject.SetActive(true);
+            //skilltxt.SetActive(true);
             
             if(Input.GetKeyDown (KeyCode.Q)) 
             {
-                skilltxt.SetActive(false);
+                //skilltxt.SetActive(false);
                 OnSkill();
             }
         }
@@ -88,7 +88,7 @@ public class Gamemanager : MonoBehaviour
                     wp1.SetActive(true);
                     wp2.SetActive(false);
                     isSkill = false;
-                    //skillbutton.gameObject.SetActive(false);
+                    skillbutton.gameObject.SetActive(false);
                 }
             }
         }
@@ -151,7 +151,7 @@ public class Gamemanager : MonoBehaviour
     {
         wp1.SetActive(false);
         wp2.SetActive(true);
-        //skillbutton.gameObject.SetActive(false);
+        skillbutton.gameObject.SetActive(false);
         isSkill = true;
     }
 
