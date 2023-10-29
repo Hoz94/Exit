@@ -6,6 +6,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 public class Tuto_Mon : MonoBehaviour
 {
+    public static Tuto_Mon instance;
     private AudioSource TutorialAudio;
     public AudioClip TutorialMonsterSound;
     public int atk = 5;
@@ -18,7 +19,7 @@ public class Tuto_Mon : MonoBehaviour
     public float dist;
     public bool isAttack;
     public bool isTrace;
-    bool isdead;
+    public bool isdead;
     Vector3 dir;
     public float attackdelay;
     float attackinterval = 1.3f;
@@ -29,6 +30,7 @@ public class Tuto_Mon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         TutorialAudio=GetComponent<AudioSource>();
         TutorialAudio.clip = TutorialMonsterSound;
         nav = GetComponent<NavMeshAgent>();

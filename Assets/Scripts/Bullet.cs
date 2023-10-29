@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Trigger") || collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Trigger") || collision.gameObject.CompareTag("Ground")|| collision.gameObject.CompareTag("TutorialGround"))
         {
             this.gameObject.SetActive(false);
         }

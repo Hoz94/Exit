@@ -9,6 +9,10 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Joystick js;
+    public GameObject TutorialPanel;
+    public Text TutorialDoorText;
+    public Text TutorialPowerText;
+    public Text TutorialPortalText;
     public GameObject CrossHair;
     public GameObject Flash;
     public GameObject gameover;
@@ -26,6 +30,14 @@ public class Player : MonoBehaviour
     public bool iswall;
     float dist = 1f;
     public int flashstate;
+    public float TutorialTime = 0f;
+    bool FirstTrigger;
+    bool SecondTrigger;
+    bool ThirdTrigger;
+
+    int FirstTriggerCount = 0;
+    int SecondTriggerCount = 0;
+
     private void Awake()
     {
         gameover.gameObject.SetActive(false);
@@ -48,6 +60,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TutorialTime += Time.deltaTime;
         Cursor.visible = false; // 마우스커서 안보이게
         Cursor.lockState = CursorLockMode.Locked; // 
 /*        MouseRotation();*/
@@ -60,9 +73,18 @@ public class Player : MonoBehaviour
         {
             p_power = 100f;
         }
-        /*        statime += Time.deltaTime;  */
 
-/*           FlashControl();*/
+        /*           FlashControl();*/
+
+        HandleTutoTrigger();
+
+        if (TutorialTime >= 2f)
+        {
+            TutorialPanel.SetActive(false);
+            TutorialDoorText.gameObject.SetActive(false);
+            TutorialPowerText.gameObject.SetActive(false);
+            TutorialPortalText.gameObject.SetActive(false);
+        }
     }
 
 
@@ -71,6 +93,30 @@ public class Player : MonoBehaviour
         Move();
         //StopToWall();
         /*        joyMove();*/
+    }
+
+    void HandleTutoTrigger()
+    {
+        if(FirstTrigger&&FirstTriggerCount==1) 
+        {
+            TutorialTime = 0f;
+            TutorialPanel.SetActive(true);
+            TutorialDoorText.gameObject.SetActive(true);
+        }
+
+        if(SecondTrigger&&SecondTriggerCount==1)
+        {
+            TutorialTime = 0f;
+            TutorialPanel.SetActive(true);
+            TutorialPowerText.gameObject.SetActive(true);
+        }
+
+        if(ThirdTrigger&& Tuto_Mon.instance.isdead==true)
+        {
+            TutorialTime = 0f;
+            TutorialPanel.SetActive(true);
+            TutorialPortalText.gameObject.SetActive(true);
+        }
     }
 
     void Move() //키보드 이동
@@ -211,5 +257,30 @@ public class Player : MonoBehaviour
                     break;
             }
         }
+
+        if(other.gameObject.CompareTag("FirstTrigger"))
+        {
+            FirstTrigger = true;
+            FirstTriggerCount++;
+
+        }
+
+        if (other.gameObject.CompareTag("SecondTrigger"))
+        {
+            SecondTrigger = true;
+            SecondTriggerCount++;
+        }
+
+        if (other.gameObject.CompareTag("ThirdTrigger"))
+        {
+            ThirdTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        FirstTrigger=false;
+        SecondTrigger=false;
+        ThirdTrigger=false;
     }
 }

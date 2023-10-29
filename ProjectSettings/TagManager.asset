@@ -17,6 +17,11 @@ TagManager:
   - BulletPos
   - m_hp
   - Potion
+  - TutorialGround
+  - TutorialOpen
+  - FirstTrigger
+  - SecondTrigger
+  - ThirdTrigger
   layers:
   - Default
   - TransparentFX
