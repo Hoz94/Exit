@@ -45,29 +45,24 @@ public class Shoot : MonoBehaviour
 
     public void Fire() // 사격
     {
-        if (Input.GetMouseButtonDown(0))
+        if (MinDelay > MaxDelay)
         {
-            if (MinDelay > MaxDelay)
+            if (MaxBullCount > MinBullCount)
             {
-                if (MaxBullCount > MinBullCount)
+                var _bullet = Gamemanager._instance.GetBullet1();
+                if (_bullet != null)
                 {
-                    var _bullet = Gamemanager._instance.GetBullet1();
-                    if(_bullet!=null)
-                    {
-                        Theaudio.Play();
-                        _bullet.transform.position = BulletPos.position;
-                        _bullet.transform.rotation = BulletPos.rotation;
-                        _bullet.SetActive(true);
-                        MaxBullCount--;
-                        Gamemanager._instance.bulletminus();
-                    }
-                    MinDelay = CurrenDelay;
-                    _ani.SetTrigger("isShot");
+                    Theaudio.Play();
+                    _bullet.transform.position = BulletPos.position;
+                    _bullet.transform.rotation = BulletPos.rotation;
+                    _bullet.SetActive(true);
+                    MaxBullCount--;
+                    Gamemanager._instance.bulletminus();
                 }
+                MinDelay = CurrenDelay;
+                _ani.SetTrigger("isShot");
             }
         }
-        else
-            return;
     }
 
     public void Reload() // 장전
