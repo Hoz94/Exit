@@ -41,11 +41,11 @@ public class Event : MonoBehaviour
                 sliderObj.SetActive(false);
                 ani.SetBool("LeverUp", true);
                 WallControl wallControl = door.GetComponent<WallControl>();
+                wallControl.count++;
                 wallControl.WallOpen();
                 isOpen = true;
             }
         }        
-
     }
 
     private void OnTriggerStay(Collider other)
@@ -55,7 +55,6 @@ public class Event : MonoBehaviour
             isTrigger = true;
             ani.SetBool("DoorOpen", true);
         }
-
     }
 
     private void OnTriggerExit(Collider other)

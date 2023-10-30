@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
 
         HandleTutoTrigger();
 
-        if (TutorialTime >= 2f)
+        if (TutorialTime >= 4f)
         {
             TutorialPanel.SetActive(false);
             TutorialDoorText.gameObject.SetActive(false);

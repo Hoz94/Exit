@@ -23,7 +23,7 @@ public class Shoot : MonoBehaviour
     private Animator _ani;
     float reloadtime;
 
-
+    
     void Start()
     {
         _ani = GetComponentInChildren<Animator>();
@@ -32,10 +32,14 @@ public class Shoot : MonoBehaviour
         Reloadaudio.clip = Reloadsound;
     }
 
+    private void OnEnable()
+    {
+        transform.Rotate(0f, -1.668f, 0f);
+    }
     // Update is called once per frame
     void Update()
     {
-        Fire();
+        //Fire();
         MinDelay += Time.deltaTime;
         if(MaxBullCount==0)
         {

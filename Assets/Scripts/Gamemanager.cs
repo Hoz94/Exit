@@ -78,7 +78,7 @@ public class Gamemanager : MonoBehaviour
 
         if (isSkill==true)
         {
-            if (Input.GetMouseButton(0))
+            if (Shoot2._instance.Skillfire)
             {
                 skillready = true;
                 player.p_power -= 10f * Time.deltaTime;
