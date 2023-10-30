@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         gameover=GetComponent<GameObject>();
         p_power = 0f;
         /*        p_stamina = 100f;*/
-        js.gameObject.SetActive(true);//키보드 이동일때 조이스틱 false
+        //js.gameObject.SetActive(true);//키보드 이동일때 조이스틱 false
         flashstate = 0;
     
     }
@@ -61,9 +61,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         TutorialTime += Time.deltaTime;
-        //Cursor.visible = false; // 마우스커서 안보이게
-        //Cursor.lockState = CursorLockMode.Locked;
-/*        MouseRotation();*/
+        Cursor.visible = false; // 마우스커서 안보이게
+        Cursor.lockState = CursorLockMode.Locked;
+        MouseRotation();
         if (p_Hp >= 100)
         {
             p_Hp = 100;
@@ -85,13 +85,14 @@ public class Player : MonoBehaviour
             TutorialPowerText.gameObject.SetActive(false);
             TutorialPortalText.gameObject.SetActive(false);
         }
+        
     }
 
 
     private void FixedUpdate()
     {
-        //Move();
-        joyMove();
+        Move();
+        //joyMove();
     }
 
     void HandleTutoTrigger()

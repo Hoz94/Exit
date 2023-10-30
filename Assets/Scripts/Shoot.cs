@@ -39,7 +39,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Fire();
+        Fire();
         MinDelay += Time.deltaTime;
         if(MaxBullCount==0)
         {
@@ -49,24 +49,28 @@ public class Shoot : MonoBehaviour
 
     public void Fire() // 사격
     {
-        if (MinDelay > MaxDelay)
+        if(Input.GetMouseButtonDown(0)) 
         {
-            if (MaxBullCount > MinBullCount)
+            if (MinDelay > MaxDelay)
             {
-                var _bullet = Gamemanager._instance.GetBullet1();
-                if (_bullet != null)
+                if (MaxBullCount > MinBullCount)
                 {
-                    Theaudio.Play();
-                    _bullet.transform.position = BulletPos.position;
-                    _bullet.transform.rotation = BulletPos.rotation;
-                    _bullet.SetActive(true);
-                    MaxBullCount--;
-                    Gamemanager._instance.bulletminus();
+                    var _bullet = Gamemanager._instance.GetBullet1();
+                    if (_bullet != null)
+                    {
+                        Theaudio.Play();
+                        _bullet.transform.position = BulletPos.position;
+                        _bullet.transform.rotation = BulletPos.rotation;
+                        _bullet.SetActive(true);
+                        MaxBullCount--;
+                        Gamemanager._instance.bulletminus();
+                    }
+                    MinDelay = CurrenDelay;
+                    _ani.SetTrigger("isShot");
                 }
-                MinDelay = CurrenDelay;
-                _ani.SetTrigger("isShot");
             }
         }
+
     }
 
     public void Reload() // 장전

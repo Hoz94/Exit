@@ -66,19 +66,20 @@ public class Gamemanager : MonoBehaviour
 
         if (player.p_power >= 100 && isSkill==false)
         {
-            skillbutton.gameObject.SetActive(true);
-            //skilltxt.SetActive(true);
+            //skillbutton.gameObject.SetActive(true);
+            skilltxt.SetActive(true);
             
             if(Input.GetKeyDown (KeyCode.Q)) 
             {
-                //skilltxt.SetActive(false);
+                skilltxt.SetActive(false);
                 OnSkill();
             }
         }
 
         if (isSkill==true)
         {
-            if (Shoot2._instance.Skillfire)
+            //if (Shoot2._instance.Skillfire)
+            if(Input.GetMouseButton(0))
             {
                 skillready = true;
                 player.p_power -= 10f * Time.deltaTime;

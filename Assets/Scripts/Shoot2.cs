@@ -36,12 +36,34 @@ public class Shoot2 : MonoBehaviour
         {
             MinDelay += Time.deltaTime;
             Fire();
+            
+            //MobileFire();
         }
     }
 
-    
+    void Fire()
+    {
+        isFire = true;
+        if (Input.GetMouseButton(0))
+        {
+            if (MinDelay > MaxDelay)
+            {
+                var _bullet = Gamemanager._instance.GetBullet2();
+                if (_bullet != null)
+                {
+                    Theaudio.Play();
+                    _bullet.transform.position = BulletPos.position;
+                    _bullet.transform.rotation = BulletPos.rotation;
+                    _bullet.SetActive(true);
+                    MinDelay = CurrenDelay;
+                }
+            }
 
-    public void Fire()
+            gamemanager.skillready = false;
+        }
+    }
+
+    public void MobileFire()
     {
         isFire = true;
         if (Skillfire && MinDelay > MaxDelay)
