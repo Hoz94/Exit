@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     public BoxOpen box;
     private UI ui;
     public float p_Hp = 100f;
-    public float speed = 8f;
+    public float speed = 5f;
     public float turnspeed = 3f;
     public GameObject Flashlight;
     public float p_power;
@@ -61,9 +61,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         TutorialTime += Time.deltaTime;
-        Cursor.visible = false; // 마우스커서 안보이게
-        Cursor.lockState = CursorLockMode.Locked;
-        MouseRotation();
+        //MouseRotation();
         if (p_Hp >= 100)
         {
             p_Hp = 100;

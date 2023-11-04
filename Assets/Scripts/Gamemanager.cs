@@ -18,25 +18,35 @@ public class Gamemanager : MonoBehaviour
     public int bullet2maxPool = 30;
     public List<GameObject> bullet2Pool = new List<GameObject>();
 
-    public Player player;
-    public BoxOpen bx;
+    public static Gamemanager _instance; // 싱글톤
+
     public GameObject camera;
-    public static Gamemanager _instance;
     public GameObject gameOverUI;
-    public Image[] BulletImg;
     public GameObject wp1;
     public GameObject wp2;
-    public Button skillbutton;
-    public int MaxKey = 4;
-    public int CurKey=0;
     public GameObject Exit;
     public GameObject escui;
+    public GameObject skilltxt;
+
+    public Player player;
+
+    public BoxOpen bx;
+
+    public Text nexttxt;
+
+    public Image[] BulletImg;
+
+    public Button skillbutton;
+
     public Portal portal;
+
+    public int MaxKey = 4;
+    public int CurKey=0;
+
+    public bool skillready;
     public bool isSkill = false;
     public bool isStart = false;
-    public Text nexttxt;
-    public GameObject skilltxt;
-    public bool skillready;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +71,6 @@ public class Gamemanager : MonoBehaviour
         if (player.p_Hp<=0)
         {
             GameOver();
-           
         }
 
         if (player.p_power >= 100 && isSkill==false)
@@ -94,9 +103,20 @@ public class Gamemanager : MonoBehaviour
             }
         }
 
+        if(Time.timeScale>=1f)
+        {
+            Cursor.visible = false; // 마우스커서 안보이게
+            Cursor.lockState = CursorLockMode.Locked; // 마우스커서 중앙에 고정
+        }
+
+        else if(Time.timeScale==0)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
-    public void CreateBullet1Pooling()
+    public void CreateBullet1Pooling() //일반총알 풀링
     {
         GameObject object1Pools = new GameObject("ObjectPools");
 
@@ -109,7 +129,7 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-    public void CreateBullet2Pooling()
+    public void CreateBullet2Pooling() // 기관총 총알 풀링
     {
         GameObject object2Pools = new GameObject("SkillObjectPools");
 
@@ -122,7 +142,7 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-    public GameObject GetBullet1()
+    public GameObject GetBullet1() // 일반총알 꺼내쓰기
     {
         for (int i = 0; i < bullet1Pool.Count; i++)
         {
@@ -135,7 +155,7 @@ public class Gamemanager : MonoBehaviour
         return null;
     }
 
-    public GameObject GetBullet2()
+    public GameObject GetBullet2() // 기관총 총알 꺼내쓰기
     {
         for (int i = 0; i < bullet2Pool.Count; i++)
         {
@@ -148,7 +168,7 @@ public class Gamemanager : MonoBehaviour
         return null;
     }
 
-    public void OnSkill()
+    public void OnSkill() // 스킬을 사용했을 때
     {
         wp1.SetActive(false);
         wp2.SetActive(true);
@@ -156,12 +176,12 @@ public class Gamemanager : MonoBehaviour
         isSkill = true;
     }
 
-    public void To_Lobby()
+    public void To_Lobby() // 로비로
     {
         SceneManager.LoadScene(0);
     }
 
-    public void RestartGame()
+    public void RestartGame() // 게임 재시작
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -169,16 +189,16 @@ public class Gamemanager : MonoBehaviour
     }
 
 
-    public void GameOver()
+    public void GameOver() // 죽었을 때
     {
         Time.timeScale = 0;
         camera.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
         gameOverUI.SetActive(true);
         player.gameObject.SetActive(false);
     }
-    public void bulletminus()
+    public void bulletminus() // 총 쏠 때 총알 이미지 하나씩 없어지는거
     {
         for(int i = 0; i < BulletImg.Count(); i++)
         {
@@ -189,7 +209,7 @@ public class Gamemanager : MonoBehaviour
             }
         }
     }
-    public void bulletReload()
+    public void bulletReload() // 총알 장전하면 이미지 다시 차는거
     {
         for (int i = 0; i < BulletImg.Count(); i++)
         {
@@ -197,9 +217,7 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-
-
-    public void OnClickResume()
+    public void OnClickResume() // 돌아가기
     {
         Time.timeScale = 1;
         escui.SetActive(false);
@@ -214,14 +232,14 @@ public class Gamemanager : MonoBehaviour
     }*/
 
 
-    public void CallescUI()
+    public void CallescUI() // ESC 눌렀을 때 UI 호출
     {
         escui.SetActive(true);
         Time.timeScale = 0;
         player.gameObject.SetActive(false);
         camera.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
         
     }
 }
