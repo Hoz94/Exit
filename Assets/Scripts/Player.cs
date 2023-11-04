@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     public GameObject gameover;
     public GameObject Flashlight;
 
+    public Light light;
+
     public Text TutorialDoorText;
     public Text TutorialPowerText;
     public Text TutorialPortalText;
@@ -58,6 +60,7 @@ public class Player : MonoBehaviour
         CrossHair=Instantiate(CrossHair);
         ui=GetComponent<UI>();
         gameover=GetComponent<GameObject>();
+
         p_power = 0f;
 
         flashstate = 0;
@@ -75,7 +78,7 @@ public class Player : MonoBehaviour
             p_Hp = 100;
         }
 
-        if (p_power>=100f)
+        if (p_power >= 100f)
         {
             p_power = 100f;
         }
@@ -90,7 +93,11 @@ public class Player : MonoBehaviour
         }
 
         HandleTutoTrigger();
-        //FlashControl();
+
+        if (light.gameObject.activeSelf == true)
+        {
+            FlashControl();
+        }
     }
 
 
@@ -132,27 +139,12 @@ public class Player : MonoBehaviour
         Vector3 movement = new Vector3(Horizontal, 0f, Vertical); 
         movement = transform.TransformVector(movement); //월드 좌표 공간(world space)에서 로컬 좌표 공간으로 벡터를 변환하는 데 사용.
         movement *= speed * Time.deltaTime;
-        
-        
 
 
-        bool isMoving = movement.magnitude > 0f; // 플레이어가 움직이고 있는지 확인.
+        transform.position += movement;
 
-        if(iswall)
-        {
-            movement = Vector3.zero;
-        }
+        //bool isMoving = movement.magnitude > 0f; // 플레이어가 움직이고 있는지 확인.
 
-        if (!iswall)
-        {
-            speed = 5f;
-            transform.position += movement;
-        }
-
-        if(Input.GetKey(KeyCode.S))
-        {
-            speed=4f;
-        }
     }
 
     void FlashControl() // 후레쉬 조작
@@ -160,12 +152,16 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.T))
         {
             flashstate++;
-            if(flashstate%2==0)
+            if (flashstate % 2 == 0)
             {
-                Flashlight.SetActive(false);
+                light.spotAngle = 135f;
+                light.range = 35f;
             }
             else
-                Flashlight.SetActive(true);
+            { 
+                light.spotAngle = 20f;
+                light.range = 70f;
+            } 
         }
     }
 

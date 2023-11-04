@@ -103,7 +103,7 @@ public class Gamemanager : MonoBehaviour
             }
         }
 
-        if(Time.timeScale>=1f)
+/*        if(Time.timeScale>=1f)
         {
             Cursor.visible = false; // 마우스커서 안보이게
             Cursor.lockState = CursorLockMode.Locked; // 마우스커서 중앙에 고정
@@ -113,7 +113,7 @@ public class Gamemanager : MonoBehaviour
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-        }
+        }*/
     }
 
     public void CreateBullet1Pooling() //일반총알 풀링
