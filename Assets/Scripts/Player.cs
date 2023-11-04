@@ -9,34 +9,42 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Joystick js;
+
     public GameObject TutorialPanel;
-    public Text TutorialDoorText;
-    public Text TutorialPowerText;
-    public Text TutorialPortalText;
     public GameObject CrossHair;
     public GameObject Flash;
     public GameObject gameover;
+    public GameObject Flashlight;
+
+    public Text TutorialDoorText;
+    public Text TutorialPowerText;
+    public Text TutorialPortalText;
+
     private Transform cameraTransform;
+
     private Animator anim;
+
     public BoxOpen box;
+
     private UI ui;
+
+    private float xRotate = 0.0f;
     public float p_Hp = 100f;
     public float speed = 5f;
     public float turnspeed = 3f;
-    public GameObject Flashlight;
     public float p_power;
-/*    public float statime;*/
-    private float xRotate = 0.0f;
-    public bool iswall;
-    float dist = 1f;
-    public int flashstate;
     public float TutorialTime = 0f;
+    float dist = 1f;
+    /*    public float statime;*/
+
+    public int flashstate;
+    int FirstTriggerCount = 0;
+    int SecondTriggerCount = 0;
+
     bool FirstTrigger;
     bool SecondTrigger;
     bool ThirdTrigger;
-
-    int FirstTriggerCount = 0;
-    int SecondTriggerCount = 0;
+    public bool iswall;
 
     private void Awake()
     {
@@ -51,17 +59,17 @@ public class Player : MonoBehaviour
         ui=GetComponent<UI>();
         gameover=GetComponent<GameObject>();
         p_power = 0f;
+
+        flashstate = 0;
+
         /*        p_stamina = 100f;*/
         //js.gameObject.SetActive(true);//키보드 이동일때 조이스틱 false
-        flashstate = 0;
-    
     }
 
     // Update is called once per frame
     void Update()
     {
         TutorialTime += Time.deltaTime;
-        //MouseRotation();
         if (p_Hp >= 100)
         {
             p_Hp = 100;
@@ -72,9 +80,6 @@ public class Player : MonoBehaviour
             p_power = 100f;
         }
 
-        /*           FlashControl();*/
-
-        HandleTutoTrigger();
 
         if (TutorialTime >= 4f)
         {
@@ -83,7 +88,9 @@ public class Player : MonoBehaviour
             TutorialPowerText.gameObject.SetActive(false);
             TutorialPortalText.gameObject.SetActive(false);
         }
-        
+
+        HandleTutoTrigger();
+        //FlashControl();
     }
 
 
@@ -138,7 +145,7 @@ public class Player : MonoBehaviour
 
         if (!iswall)
         {
-            speed = 8f;
+            speed = 5f;
             transform.position += movement;
         }
 
@@ -160,26 +167,6 @@ public class Player : MonoBehaviour
             else
                 Flashlight.SetActive(true);
         }
-    }
-
-    void MouseRotation()
-    {
-        // 좌우로 움직인 마우스의 이동량 * 속도에 따라 카메라가 좌우로 회전할 양 계산
-        float yRotateSize = Input.GetAxis("Mouse X") * turnspeed;
-        // 현재 y축 회전값에 더한 새로운 회전각도 계산
-        float yRotate = transform.eulerAngles.y + yRotateSize;
-
-
-        // 위아래로 움직인 마우스의 이동량 * 속도에 따라 카메라가 회전할 양 계산(하늘, 바닥을 바라보는 동작)
-        float xRotateSize = -Input.GetAxis("Mouse Y") * turnspeed;
-        // 위아래 회전량을 더해주지만 -45도 ~ 80도로 제한 (-45:하늘방향, 80:바닥방향)
-
-        // Clamp 는 값의 범위를 제한하는 함수
-        xRotate = Mathf.Clamp(xRotate + xRotateSize, -45, 80);
-
-        // 카메라 회전량을 카메라에 반영(X, Y축만 회전)
-        transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
-
     }
 
     void joyMove()
