@@ -57,9 +57,9 @@ public class Player : MonoBehaviour
     {
         cameraTransform = Camera.main.transform;
         anim = this.GetComponent<Animator>();
-        CrossHair=Instantiate(CrossHair);
-        ui=GetComponent<UI>();
-        gameover=GetComponent<GameObject>();
+        CrossHair = Instantiate(CrossHair);
+        ui = GetComponent<UI>();
+        gameover = GetComponent<GameObject>();
 
         p_power = 0f;
 

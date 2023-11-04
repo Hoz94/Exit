@@ -32,7 +32,7 @@ public class Shoot2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gamemanager.skillready == true)
+        if (gamemanager.skillready == true&&Time.timeScale!=0)
         {
             MinDelay += Time.deltaTime;
             Fire();

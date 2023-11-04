@@ -25,7 +25,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject wp1;
     public GameObject wp2;
     public GameObject Exit;
-    public GameObject escui;
+
     public GameObject skilltxt;
 
     public Player player;
@@ -63,11 +63,6 @@ public class Gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)) 
-        {
-            CallescUI();
-        }
-
         if (player.p_Hp<=0)
         {
             GameOver();
@@ -103,17 +98,17 @@ public class Gamemanager : MonoBehaviour
             }
         }
 
-/*        if(Time.timeScale>=1f)
+        if (Time.timeScale >= 1f)
         {
             Cursor.visible = false; // 마우스커서 안보이게
             Cursor.lockState = CursorLockMode.Locked; // 마우스커서 중앙에 고정
         }
 
-        else if(Time.timeScale==0)
+        else if (Time.timeScale == 0)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-        }*/
+        }
     }
 
     public void CreateBullet1Pooling() //일반총알 풀링
@@ -176,19 +171,6 @@ public class Gamemanager : MonoBehaviour
         isSkill = true;
     }
 
-    public void To_Lobby() // 로비로
-    {
-        SceneManager.LoadScene(0);
-    }
-
-    public void RestartGame() // 게임 재시작
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        
-    }
-
-
     public void GameOver() // 죽었을 때
     {
         Time.timeScale = 0;
@@ -217,14 +199,7 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-    public void OnClickResume() // 돌아가기
-    {
-        Time.timeScale = 1;
-        escui.SetActive(false);
-        player.gameObject.SetActive(true);
-        camera.SetActive(false);
-        
-    }
+
 
 /*    public void OnClickQuit()
     {
@@ -232,14 +207,5 @@ public class Gamemanager : MonoBehaviour
     }*/
 
 
-    public void CallescUI() // ESC 눌렀을 때 UI 호출
-    {
-        escui.SetActive(true);
-        Time.timeScale = 0;
-        player.gameObject.SetActive(false);
-        camera.SetActive(true);
-        //Cursor.visible = true;
-        //Cursor.lockState = CursorLockMode.None;
-        
-    }
+
 }

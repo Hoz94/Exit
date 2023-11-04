@@ -39,7 +39,10 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Fire();
+        if (Time.timeScale != 0)
+        {
+            Fire();
+        }
         MinDelay += Time.deltaTime;
         if(MaxBullCount==0)
         {
