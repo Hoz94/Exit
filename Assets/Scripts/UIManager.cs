@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject escui;
+    public GameObject EscUI;
+    public GameObject FlashUI;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,13 @@ public class UIManager : MonoBehaviour
     public void OnClickResume() // 돌아가기
     {
         Time.timeScale = 1;
-        escui.SetActive(false);
+        EscUI.SetActive(false);
+    }
+
+    public void OnFlashResume() // 후레쉬 습득하고 UI창 나온거 닫기
+    {
+        Time.timeScale = 1;
+        FlashUI.SetActive(false);
     }
 
     public void To_Lobby() // 로비로 돌아가기
@@ -36,7 +43,7 @@ public class UIManager : MonoBehaviour
 
     public void CallescUI() // ESC 눌렀을 때 UI 호출
     {
-        escui.SetActive(true);
+        EscUI.SetActive(true);
         Time.timeScale = 0;
     }
 
