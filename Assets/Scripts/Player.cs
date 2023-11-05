@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     public float turnspeed = 3f;
     public float p_power;
-    public float TutorialTime = 0f;
     float dist = 1f;
     /*    public float statime;*/
 
@@ -72,7 +71,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TutorialTime += Time.deltaTime;
+
         if (p_Hp >= 100)
         {
             p_Hp = 100;
@@ -82,17 +81,6 @@ public class Player : MonoBehaviour
         {
             p_power = 100f;
         }
-
-
-        if (TutorialTime >= 4f)
-        {
-            TutorialPanel.SetActive(false);
-            TutorialDoorText.gameObject.SetActive(false);
-            TutorialPowerText.gameObject.SetActive(false);
-            TutorialPortalText.gameObject.SetActive(false);
-        }
-
-        HandleTutoTrigger();
 
         if (light.gameObject.activeSelf == true)
         {
@@ -107,29 +95,6 @@ public class Player : MonoBehaviour
         //joyMove();
     }
 
-    void HandleTutoTrigger()
-    {
-        if(FirstTrigger&&FirstTriggerCount==1) 
-        {
-            TutorialTime = 0f;
-            TutorialPanel.SetActive(true);
-            TutorialDoorText.gameObject.SetActive(true);
-        }
-
-        if(SecondTrigger&&SecondTriggerCount==1)
-        {
-            TutorialTime = 0f;
-            TutorialPanel.SetActive(true);
-            TutorialPowerText.gameObject.SetActive(true);
-        }
-
-        if(ThirdTrigger&& Tuto_Mon.instance.isdead==true)
-        {
-            TutorialTime = 0f;
-            TutorialPanel.SetActive(true);
-            TutorialPortalText.gameObject.SetActive(true);
-        }
-    }
 
     void Move() //키보드 이동
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tutorial_Trigger : MonoBehaviour
 {
-    public GameObject TutorialZombie;
+    public GameObject GunExplation;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +21,8 @@ public class Tutorial_Trigger : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            TutorialZombie.SetActive(true);
-            
+            Time.timeScale = 0f;
+            GunExplation.SetActive(true);
             this.gameObject.SetActive(false);
         }
     }

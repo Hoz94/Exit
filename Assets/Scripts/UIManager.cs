@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject EscUI;
     public GameObject FlashUI;
-
+    public GameObject GunExplationUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,8 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            CallescUI();
+            EscUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
@@ -30,10 +31,12 @@ public class UIManager : MonoBehaviour
         EscUI.SetActive(false);
     }
 
-    public void OnFlashResume() // 후레쉬 습득하고 UI창 나온거 닫기
+    public void OnFlashResume() // 후레쉬 습득하고 UI창 나온거 닫기, 총 설명 UI창 닫기
     {
         Time.timeScale = 1;
         FlashUI.SetActive(false);
+        GunExplationUI.SetActive(false);
+
     }
 
     public void To_Lobby() // 로비로 돌아가기
@@ -43,8 +46,7 @@ public class UIManager : MonoBehaviour
 
     public void CallescUI() // ESC 눌렀을 때 UI 호출
     {
-        EscUI.SetActive(true);
-        Time.timeScale = 0;
+
     }
 
 
