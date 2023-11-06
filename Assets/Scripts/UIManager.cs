@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public GameObject EscUI;
     public GameObject FlashUI;
     public GameObject GunExplationUI;
+    public GameObject B_Area_Explanation;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,12 @@ public class UIManager : MonoBehaviour
         FlashUI.SetActive(false);
         GunExplationUI.SetActive(false);
 
+    }
+
+    public void OnArea_B_ExplanationResume() // B구역 설명 끄기
+    {
+        Time.timeScale = 1;
+        B_Area_Explanation.SetActive(false);
     }
 
     public void To_Lobby() // 로비로 돌아가기
