@@ -56,6 +56,7 @@ public class Bullet : MonoBehaviour
         }
         else
         {
+            gameObject.SetActive(true);
             StartCoroutine(falseBullet());
         }       
     }
