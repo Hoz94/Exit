@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
 
     public int max_hp = 50;
 
-    public float patrolSpeed = 1f; // 순찰 이동속도
+    public float patrolSpeed = 3f; // 순찰 이동속도
 
     public bool isDead = false;
     public bool isTrace = false;
@@ -104,7 +104,7 @@ public class Enemy : MonoBehaviour
         if (isTrace == true && stoptime >= 0.25f && isHit == false)
         {
             nvAgent.acceleration = 8;
-            nvAgent.speed = 5f;
+            nvAgent.speed = 6.5f;
             _animator.SetBool("isTrace", true);
             dir = player.transform.position;
             nvAgent.SetDestination(dir);

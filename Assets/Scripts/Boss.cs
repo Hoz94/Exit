@@ -23,7 +23,7 @@ public class Boss : MonoBehaviour
     private Animator _animator;
     private CapsuleCollider cc;
     public Gamemanager gamemanager;
-    private float patrolSpeed = 1.5f; // 순찰 속도
+    private float patrolSpeed = 3f; // 순찰 속도
 
     public float viewRange = 15f; // 시야 범위
     public float viewAngle = 120f; // 시야 각
@@ -37,8 +37,8 @@ public class Boss : MonoBehaviour
     bool isBossHit = false;
 
     int currentWaypointIndex = 0;
-    int max_hp = 150;
-    int b_Hp = 150;
+    int max_hp = 300;
+    int b_Hp = 300;
     int b_Atk = 20;
 
     public Vector3 dir;
@@ -59,11 +59,6 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        if(this.gameObject!=null)
-        {
-            StartCoroutine(SoundCo());
-        }
-
         if (CanSeePlayer() && !isAttack)
         {
             Trace();
@@ -108,7 +103,7 @@ public class Boss : MonoBehaviour
     {
         if (isTrace == true)
         {
-            navagent.speed = 2.5f;
+            navagent.speed = 5f;
             navagent.acceleration = 8f;
             _animator.SetBool("isTrace", true);
             _animator.SetBool("isWalk", false);
@@ -165,20 +160,7 @@ public class Boss : MonoBehaviour
         navagent.speed = patrolSpeed;
     }
 
-    IEnumerator SoundCo()
-    {
-        int a = Random.RandomRange(0, 3);
-        switch (a)
-        {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-        }
-        yield return new WaitForSecondsRealtime(1.5f);
-    }
+
 
     bool CanSeePlayer()
     {
@@ -199,12 +181,12 @@ public class Boss : MonoBehaviour
         return false;
     }
 
-    /*    private void OnDrawGizmos() //추격범위 시야
-        {
-            Handles.color = Color.red;
-            Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, viewAngle / 2f, viewRange);
-            Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, -viewAngle / 2f, viewRange);
-        }*/
+    private void OnDrawGizmos() //추격범위 시야
+    {
+        Handles.color = Color.red;
+        Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, viewAngle / 2f, viewRange);
+        Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, -viewAngle / 2f, viewRange);
+    }
 
     void HandleHP()
     {

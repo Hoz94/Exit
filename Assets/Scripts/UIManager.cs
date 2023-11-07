@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public GameObject FlashUI;
     public GameObject GunExplationUI;
     public GameObject B_Area_Explanation;
+    public GameObject PotionExplanation;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,12 @@ public class UIManager : MonoBehaviour
     public void To_Lobby() // 로비로 돌아가기
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void OnQuitPotionExplanation()
+    {
+        Time.timeScale = 1;
+        PotionExplanation.SetActive(false);
     }
 
     public void CallescUI() // ESC 눌렀을 때 UI 호출

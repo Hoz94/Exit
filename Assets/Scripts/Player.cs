@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
     private float xRotate = 0.0f;
     public float p_Hp = 100f;
-    public float speed = 5f;
+    public float speed = 5.5f;
     public float turnspeed = 3f;
     public float p_power;
     float dist = 1f;
@@ -174,7 +174,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(other.gameObject.CompareTag("FirstTrigger"))
+/*        if(other.gameObject.CompareTag("FirstTrigger"))
         {
             FirstTrigger = true;
             FirstTriggerCount++;
@@ -190,13 +190,13 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("ThirdTrigger"))
         {
             ThirdTrigger = true;
-        }
+        }*/
     }
 
-    private void OnTriggerExit(Collider other)
+/*    private void OnTriggerExit(Collider other)
     {
         FirstTrigger=false;
         SecondTrigger=false;
         ThirdTrigger=false;
-    }
+    }*/
 }

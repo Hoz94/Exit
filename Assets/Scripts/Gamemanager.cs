@@ -25,6 +25,8 @@ public class Gamemanager : MonoBehaviour
     public GameObject wp1;
     public GameObject wp2;
     public GameObject Exit;
+    public GameObject B_Area_Door;
+    public GameObject C_Area_Door;
 
     public GameObject skilltxt;
 
@@ -109,7 +111,19 @@ public class Gamemanager : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+
+        if (CurKey == 1)
+        {
+            B_Area_Door.SetActive(false);
+        }
+        if (CurKey == 2)
+        {
+            C_Area_Door.SetActive(false);
+        }
     }
+
+
+
 
     public void CreateBullet1Pooling() //일반총알 풀링
     {
