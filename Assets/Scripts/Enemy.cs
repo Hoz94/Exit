@@ -77,6 +77,19 @@ public class Enemy : MonoBehaviour
 
         Trace();
         HandleHP();
+
+        if (m_HP <= 0)
+        {
+            isDead = true;
+            m_hpbar.value = 0;
+            Theaudio.Stop();
+            _animator.SetTrigger("isDead");
+
+            cc.enabled = false;
+            nvAgent.velocity = Vector3.zero;
+            Destroy(gameObject, 1.5f);
+
+        }
     }
     
     void Patrol()
@@ -101,10 +114,10 @@ public class Enemy : MonoBehaviour
 
     void Trace()
     {
-        if (isTrace == true && stoptime >= 0.25f && isHit == false)
+        if (isTrace == true && isHit == false)
         {
             nvAgent.acceleration = 8;
-            nvAgent.speed = 6.5f;
+            nvAgent.speed = 7f;
             _animator.SetBool("isTrace", true);
             dir = player.transform.position;
             nvAgent.SetDestination(dir);
@@ -153,21 +166,10 @@ public class Enemy : MonoBehaviour
         if (gamemanager.isSkill == false)
         {
             player.GetComponent<Player>().p_power += 5f;
+            player.GetComponent<Player>().p_Hp += 2f;
         }
         nvAgent.speed = 0;
 
-        if (m_HP <= 0)
-        {
-            isDead = true;
-            m_hpbar.value = 0;
-            Theaudio.Stop();
-            _animator.SetTrigger("isDead");
-
-            cc.enabled = false;
-            nvAgent.velocity = Vector3.zero;
-            Destroy(gameObject, 1.5f);
-            
-        }
         yield return new WaitForSeconds(stoptime);
 
         nvAgent.speed = patrolSpeed;

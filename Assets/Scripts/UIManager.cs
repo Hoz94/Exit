@@ -10,6 +10,10 @@ public class UIManager : MonoBehaviour
     public GameObject GunExplationUI;
     public GameObject B_Area_Explanation;
     public GameObject PotionExplanation;
+    public GameObject MapExplanation;
+    public GameObject MissionText;
+    public GameObject RealToLobby;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,8 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             EscUI.SetActive(true);
+            MapExplanation.SetActive(false);
+            MissionText.SetActive(false);
             Time.timeScale = 0;
         }
     }
@@ -49,13 +55,35 @@ public class UIManager : MonoBehaviour
 
     public void To_Lobby() // 로비로 돌아가기
     {
+        RealToLobby.SetActive(true); // 정말로 돌아갈거냐? 화면 띄우기
+    }
+
+    public void Real_Go_To_Lobby() // 예 누르면 로비로 보내기
+    {
         SceneManager.LoadScene(0);
+    }
+
+    public void LobbyNo() // 로비로 돌아가지 않는다는 버튼
+    {
+        RealToLobby.SetActive(false);
     }
 
     public void OnQuitPotionExplanation()
     {
         Time.timeScale = 1;
         PotionExplanation.SetActive(false);
+    }
+
+    public void ClickMissionUI()
+    {
+        MapExplanation.SetActive(false);
+        MissionText.SetActive(true);
+    }
+
+    public void MapExplanationUI()
+    {
+        MissionText.SetActive(false);
+        MapExplanation.SetActive(true);
     }
 
     public void CallescUI() // ESC 눌렀을 때 UI 호출

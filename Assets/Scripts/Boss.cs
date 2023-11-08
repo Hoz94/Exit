@@ -59,7 +59,7 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        if (CanSeePlayer() && !isAttack)
+        if (/*CanSeePlayer()*/!isAttack&&isTrace)
         {
             Trace();
         }
@@ -153,39 +153,11 @@ public class Boss : MonoBehaviour
         if (gamemanager.isSkill == false)
         {
             player.GetComponent<Player>().p_power += 5f;
-            player.GetComponent<Player>().p_Hp += 5;
+            player.GetComponent<Player>().p_Hp += 5f;
         }
         navagent.speed = 0;
         yield return new WaitForSeconds(0.5f);
         navagent.speed = patrolSpeed;
-    }
-
-
-
-    bool CanSeePlayer()
-    {
-        if (playerTr == null)
-            return false;
-
-        Vector3 directionToPlayer = playerTr.position - transform.position;
-        float angleToPlayer = Vector3.Angle(directionToPlayer, transform.forward);
-
-        // 플레이어가 시야 범위와 시야 각 내에 있는지 확인
-        if (directionToPlayer.magnitude <= viewRange && angleToPlayer <= viewAngle / 2f)
-        {
-            // 시야 범위와 시야 각 내에 플레이어가 있음
-            return true;
-        }
-
-        // 시야 범위와 시야 각 내에 플레이어가 없음
-        return false;
-    }
-
-    private void OnDrawGizmos() //추격범위 시야
-    {
-        Handles.color = Color.red;
-        Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, viewAngle / 2f, viewRange);
-        Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, -viewAngle / 2f, viewRange);
     }
 
     void HandleHP()
@@ -205,4 +177,31 @@ public class Boss : MonoBehaviour
 
         }
     }
+    
+    
+    /*    bool CanSeePlayer()
+    {
+        if (playerTr == null)
+            return false;
+
+        Vector3 directionToPlayer = playerTr.position - transform.position;
+        float angleToPlayer = Vector3.Angle(directionToPlayer, transform.forward);
+
+        // 플레이어가 시야 범위와 시야 각 내에 있는지 확인
+        if (directionToPlayer.magnitude <= viewRange && angleToPlayer <= viewAngle / 2f)
+        {
+            // 시야 범위와 시야 각 내에 플레이어가 있음
+            return true;
+        }
+
+        // 시야 범위와 시야 각 내에 플레이어가 없음
+        return false;
+    }*/
+
+/*    private void OnDrawGizmos() //추격범위 시야
+    {
+        Handles.color = Color.red;
+        Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, viewAngle / 2f, viewRange);
+        Handles.DrawSolidArc(transform.position, Vector3.up, transform.forward, -viewAngle / 2f, viewRange);
+    }*/
 }

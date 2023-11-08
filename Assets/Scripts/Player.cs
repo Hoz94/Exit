@@ -18,9 +18,6 @@ public class Player : MonoBehaviour
 
     public Light light;
 
-    public Text TutorialDoorText;
-    public Text TutorialPowerText;
-    public Text TutorialPortalText;
 
     private Transform cameraTransform;
 
@@ -39,12 +36,6 @@ public class Player : MonoBehaviour
     /*    public float statime;*/
 
     public int flashstate;
-    int FirstTriggerCount = 0;
-    int SecondTriggerCount = 0;
-
-    bool FirstTrigger;
-    bool SecondTrigger;
-    bool ThirdTrigger;
     public bool iswall;
 
     private void Awake()
@@ -101,7 +92,7 @@ public class Player : MonoBehaviour
         float Horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
 
-        Vector3 movement = new Vector3(Horizontal, 0f, Vertical); 
+        Vector3 movement = new Vector3(Horizontal, 0f, Vertical);
         movement = transform.TransformVector(movement); //월드 좌표 공간(world space)에서 로컬 좌표 공간으로 벡터를 변환하는 데 사용.
         movement *= speed * Time.deltaTime;
 
@@ -114,7 +105,7 @@ public class Player : MonoBehaviour
 
     void FlashControl() // 후레쉬 조작
     {
-        if(Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             flashstate++;
             if (flashstate % 2 == 0)
@@ -123,10 +114,10 @@ public class Player : MonoBehaviour
                 light.range = 35f;
             }
             else
-            { 
+            {
                 light.spotAngle = 20f;
                 light.range = 70f;
-            } 
+            }
         }
     }
 
@@ -149,7 +140,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         p_Hp -= damageAmount;
-        if(p_Hp <= 0)
+        if (p_Hp <= 0)
             ui.HandleHP();
         else
             StartCoroutine(ui.ShowBloodScreen());
@@ -158,45 +149,20 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Potion"))
+        if (other.gameObject.CompareTag("Potion"))
         {
-            Potion item=other.gameObject.GetComponent<Potion>();
-            switch(item.type)
+            Potion item = other.gameObject.GetComponent<Potion>();
+            switch (item.type)
             {
                 case "Hppotion":
                     p_Hp += 20;
                     Destroy(other.gameObject);
                     break;
                 case "Powerpotion":
-                    p_power += 100;
+                    p_power += 50;
                     Destroy(other.gameObject);
                     break;
             }
         }
-
-/*        if(other.gameObject.CompareTag("FirstTrigger"))
-        {
-            FirstTrigger = true;
-            FirstTriggerCount++;
-
-        }
-
-        if (other.gameObject.CompareTag("SecondTrigger"))
-        {
-            SecondTrigger = true;
-            SecondTriggerCount++;
-        }
-
-        if (other.gameObject.CompareTag("ThirdTrigger"))
-        {
-            ThirdTrigger = true;
-        }*/
     }
-
-/*    private void OnTriggerExit(Collider other)
-    {
-        FirstTrigger=false;
-        SecondTrigger=false;
-        ThirdTrigger=false;
-    }*/
 }

@@ -81,7 +81,8 @@ public class SpawnMonster : MonoBehaviour
 
     IEnumerator OnHitCo(int damage)
     {
-
+        player.GetComponent<Player>().p_Hp += 0.5f;
+        player.GetComponent<Player>().p_power += 5f;
         Hp -= damage;
         if(Hp<=0)
         {
@@ -113,18 +114,18 @@ public class SpawnMonster : MonoBehaviour
 
     void DropItem()
     {
-        int ran = Random.Range(0, 10);
+        int ran = Random.Range(0, 100);
         Vector3 vec = new Vector3(0, -0.5f, 0);
-        if (ran < 7)
+        if (ran < 98)
         {
             
         }
 
-        else if (ran < 9)
+        else if (ran < 99)
         {
             Instantiate(Hppotion, transform.position+vec, transform.rotation);
         }
-        else if (ran < 10)
+        else if (ran < 100)
         {
             Instantiate(Powerpotion, transform.position+vec,transform.rotation);
         }
@@ -135,7 +136,7 @@ public class SpawnMonster : MonoBehaviour
     IEnumerator destroyMon()
     {
         yield return new WaitForSeconds(1.5f);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 
 }
