@@ -103,40 +103,36 @@ public class SpawnMonster : MonoBehaviour
         StartCoroutine(OnHitCo(damage));
     }
 
-    void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Bullet"))
+        if(other.gameObject.CompareTag("Bullet"))
         {
-            Bullet bullet = collision.gameObject.GetComponent<Bullet>();
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
             OnHit(bullet.damage);
         }
     }
 
     void DropItem()
     {
-        int ran = Random.Range(0, 100);
+        int ran = Random.Range(0, 10);
         Vector3 vec = new Vector3(0, -0.5f, 0);
-        if (ran < 98)
+        if (ran < 8)
         {
             
         }
 
-        else if (ran < 99)
+        else if (ran < 9)
         {
             Instantiate(Hppotion, transform.position+vec, transform.rotation);
         }
-        else if (ran < 100)
+        else if (ran < 10)
         {
             Instantiate(Powerpotion, transform.position+vec,transform.rotation);
         }
-        StartCoroutine(destroyMon());
+        Destroy(this.gameObject, 1.5f);
         
     }
 
-    IEnumerator destroyMon()
-    {
-        yield return new WaitForSeconds(1.5f);
-        this.gameObject.SetActive(false);
-    }
 
 }

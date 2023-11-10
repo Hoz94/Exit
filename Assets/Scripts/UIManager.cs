@@ -86,11 +86,10 @@ public class UIManager : MonoBehaviour
         MapExplanation.SetActive(true);
     }
 
-    public void CallescUI() // ESC 눌렀을 때 UI 호출
+    public void ExitGameBtn()
     {
-
+        Application.Quit();
     }
-
 
     public void HandleMouseSpeed()
     {
