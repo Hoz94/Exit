@@ -2,47 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Main_Menu : MonoBehaviour
 {
-    public Gamemanager gm;
-    public GameObject Explation;
-
+    public GameObject Explanation;
+    public Image gameImage;
+    public float fadeSpeed = 2f;
     // Start is called before the first frame update
     void Start()
     {
-
+        Explanation.SetActive(false);
+        SetImageAplha(0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Explation.SetActive(false);
-        }
+
     }
 
 
-    public void OnClickNewGame()
+    public void OnClickStartGame()
+    {
+        Explanation.SetActive(true);
+        StartCoroutine(FadeInImage());
+    }
+
+    public void OnClickRealStartGame()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void OnClickExplation()
+    IEnumerator FadeInImage()
     {
-        Explain();
-
+        float alpha = 0f;
+        while (alpha < 1f)
+        {
+            alpha += fadeSpeed * Time.deltaTime;
+            SetImageAplha(alpha);
+            yield return null;
+        }
     }
+
+    void SetImageAplha(float alpha)
+    {
+        Color imageColor = gameImage.color;
+        imageColor.a = alpha;
+        gameImage.color = imageColor;
+    }
+
 
     public void OnclickQuit()
     {
         Application.Quit();
-    }
-
-    public void Explain()
-    {
-        Explation.SetActive(true);
     }
 
 }
