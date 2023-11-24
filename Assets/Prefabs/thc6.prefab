@@ -3081,7 +3081,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 3
 --- !u!114 &-267386509289212983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3094,11 +3094,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d200bfeb27f07924f984170179a90222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHP: 200
-  HP: 200
+  MaxHP: 100
+  HP: 100
   Atk: 5
-  nvAgent: {fileID: 0}
   dist: 0
+  Hp_Bar: {fileID: 8551048775198662132}
 --- !u!1 &1843957999542624520
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,8 +37,8 @@ public class Boss : MonoBehaviour
     bool isBossHit = false;
 
     int currentWaypointIndex = 0;
-    int max_hp = 300;
-    int b_Hp = 300;
+    int max_hp = 200;
+    int b_Hp = 200;
     int b_Atk = 20;
 
     public Vector3 dir;

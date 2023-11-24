@@ -10,17 +10,17 @@ public class D_Area_Enemy : MonoBehaviour
     public int MaxHP=200;
     public int HP=200;
     public float Atk=5f;
-    public NavMeshAgent nvAgent;
+    private NavMeshAgent nvAgent;
     float nowSpeed=6f;
     private Vector3 dir;
     Animator _ani;
     public float dist;
     float Attackdist=2f;
     bool isTrace;
-    bool isDead;
-    bool isAttack;
+    [SerializeField] bool isDead;
+    [SerializeField] bool isAttack;
     CapsuleCollider cc;
-    private Slider Hp_Bar;
+    public Slider Hp_Bar;
 
 
     // Start is called before the first frame update
@@ -47,7 +47,7 @@ public class D_Area_Enemy : MonoBehaviour
             cc.enabled = false;
             Death();
         }
-
+        HandleHP();
     }
 
     private void FixedUpdate()
@@ -89,6 +89,8 @@ public class D_Area_Enemy : MonoBehaviour
         nvAgent.acceleration = 0;
         nvAgent.angularSpeed = 0;
         yield return new WaitForSeconds(1.5f);
+        _ani.SetBool("isTrace", true);
+        _ani.SetBool("isAttack", false);
         isAttack = false;
     }
 
@@ -106,7 +108,10 @@ public class D_Area_Enemy : MonoBehaviour
         nvAgent.acceleration = 0;
         nvAgent.angularSpeed = 0;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
+        nvAgent.angularSpeed = 5000000 * Time.deltaTime;
+        nvAgent.acceleration = 8000000 * Time.deltaTime;
+        nvAgent.speed = nowSpeed;
         cc.enabled = true;
         HP = MaxHP;
         isDead = false;
@@ -117,16 +122,14 @@ public class D_Area_Enemy : MonoBehaviour
     {
         HP -= damage;
 
-         player.GetComponent<Player>().p_power += 0.5f;
+        player.GetComponent<Player>().p_power += 0.5f;
         player.GetComponent<Player>().p_Hp += 2f;
         
     }
 
     void HandleHP()
     {
-
         Hp_Bar.value = (float)HP / (float)MaxHP;
-
     }
 
     void OnCollisionEnter(Collision collision)
@@ -134,10 +137,9 @@ public class D_Area_Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             isTrace = true;
-            isAttack = true;
+            //isAttack = true;
             Bullet bullet = collision.gameObject.GetComponent<Bullet>();
             OnHit(bullet.damage);
         }
     }
-
 }

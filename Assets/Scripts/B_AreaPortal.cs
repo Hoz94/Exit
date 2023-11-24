@@ -20,9 +20,12 @@ public class B_AreaPortal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ChatPanel.SetActive(true);
-        ChatText.text = "정말 이상한 곳이야..\n얼른 탈출하고 싶군..";
-        StartCoroutine(ChatCo());
+        if (other.CompareTag("Player"))
+        {
+            ChatPanel.SetActive(true);
+            ChatText.text = "정말 이상한 곳이야..\n얼른 탈출하고 싶군..";
+            StartCoroutine(ChatCo());
+        }
     }
 
     IEnumerator ChatCo()

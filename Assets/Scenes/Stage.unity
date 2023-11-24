@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0039957035, g: 0.00021792635, b: 0.000000051515347, a: 1}
+  m_IndirectSpecularColor: {r: 0.0039957035, g: 0.00021792634, b: 0.000000051515347, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -784,8 +784,8 @@ MonoBehaviour:
 --- !u!1 &23940454
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7073051148617288538, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+  m_PrefabInstance: {fileID: 8983992709900464936}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -802,16 +802,16 @@ GameObject:
 --- !u!81 &23940455
 AudioListener:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 536442545147548863, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+  m_PrefabInstance: {fileID: 8983992709900464936}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23940454}
   m_Enabled: 1
 --- !u!20 &23940456
 Camera:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 908973590161179192, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+  m_PrefabInstance: {fileID: 8983992709900464936}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23940454}
   m_Enabled: 1
@@ -848,7 +848,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 128
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 0d0fe09f8b7a53947bb52568cfd03543, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 2501a338238730e4e82baef3fc6e77ef, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -861,8 +861,8 @@ Camera:
 --- !u!4 &23940457
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+  m_PrefabInstance: {fileID: 8983992709900464936}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23940454}
   serializedVersion: 2
@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 31955548}
   - component: {fileID: 31955547}
   - component: {fileID: 31955546}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (45)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1281,7 +1281,7 @@ GameObject:
   - component: {fileID: 58082694}
   - component: {fileID: 58082693}
   - component: {fileID: 58082692}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (46)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1552,7 +1552,7 @@ GameObject:
   - component: {fileID: 63146935}
   - component: {fileID: 63146934}
   - component: {fileID: 63146933}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1657,7 +1657,7 @@ GameObject:
   - component: {fileID: 67114114}
   - component: {fileID: 67114113}
   - component: {fileID: 67114112}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (28)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1763,7 +1763,7 @@ GameObject:
   - component: {fileID: 73899230}
   - component: {fileID: 73899229}
   - component: {fileID: 73899228}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (82)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2507,7 +2507,7 @@ GameObject:
   - component: {fileID: 101558536}
   - component: {fileID: 101558535}
   - component: {fileID: 101558534}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2612,7 +2612,7 @@ GameObject:
   - component: {fileID: 104944181}
   - component: {fileID: 104944180}
   - component: {fileID: 104944179}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (20)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3185,7 +3185,7 @@ GameObject:
   - component: {fileID: 129140665}
   - component: {fileID: 129140664}
   - component: {fileID: 129140663}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (41)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3290,7 +3290,7 @@ GameObject:
   - component: {fileID: 129391577}
   - component: {fileID: 129391576}
   - component: {fileID: 129391575}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (94)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4001,7 +4001,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4331,7 +4331,7 @@ GameObject:
   - component: {fileID: 165552094}
   - component: {fileID: 165552093}
   - component: {fileID: 165552092}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (47)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4895,7 +4895,7 @@ GameObject:
   - component: {fileID: 181540974}
   - component: {fileID: 181540973}
   - component: {fileID: 181540972}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (33)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5000,7 +5000,7 @@ GameObject:
   - component: {fileID: 181774227}
   - component: {fileID: 181774226}
   - component: {fileID: 181774225}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (18)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5235,7 +5235,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5253,7 +5253,7 @@ GameObject:
   - component: {fileID: 197735372}
   - component: {fileID: 197735371}
   - component: {fileID: 197735370}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (29)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5363,7 +5363,7 @@ GameObject:
   - component: {fileID: 222023752}
   - component: {fileID: 222023751}
   - component: {fileID: 222023750}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (66)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5537,7 +5537,7 @@ GameObject:
   - component: {fileID: 225612026}
   - component: {fileID: 225612025}
   - component: {fileID: 225612024}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (73)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5643,7 +5643,7 @@ GameObject:
   - component: {fileID: 227913751}
   - component: {fileID: 227913750}
   - component: {fileID: 227913749}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5854,7 +5854,7 @@ GameObject:
   - component: {fileID: 237802069}
   - component: {fileID: 237802068}
   - component: {fileID: 237802067}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (43)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5960,7 +5960,7 @@ GameObject:
   - component: {fileID: 238900162}
   - component: {fileID: 238900161}
   - component: {fileID: 238900160}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6424,7 +6424,7 @@ GameObject:
   - component: {fileID: 258199549}
   - component: {fileID: 258199548}
   - component: {fileID: 258199547}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (111)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6946,7 +6946,7 @@ GameObject:
   - component: {fileID: 283504423}
   - component: {fileID: 283504422}
   - component: {fileID: 283504421}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (70)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7127,7 +7127,7 @@ GameObject:
   - component: {fileID: 292767154}
   - component: {fileID: 292767153}
   - component: {fileID: 292767152}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (39)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7237,7 +7237,7 @@ GameObject:
   - component: {fileID: 299378353}
   - component: {fileID: 299378352}
   - component: {fileID: 299378351}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (49)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9085,7 +9085,7 @@ GameObject:
   - component: {fileID: 305446376}
   - component: {fileID: 305446375}
   - component: {fileID: 305446374}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (97)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11508,7 +11508,7 @@ GameObject:
   - component: {fileID: 339270470}
   - component: {fileID: 339270469}
   - component: {fileID: 339270468}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (125)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11826,7 +11826,7 @@ GameObject:
   - component: {fileID: 354172160}
   - component: {fileID: 354172159}
   - component: {fileID: 354172158}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (116)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11932,7 +11932,7 @@ GameObject:
   - component: {fileID: 358875974}
   - component: {fileID: 358875973}
   - component: {fileID: 358875972}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12037,7 +12037,7 @@ GameObject:
   - component: {fileID: 360529881}
   - component: {fileID: 360529880}
   - component: {fileID: 360529879}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12282,7 +12282,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1135148036}
         m_TargetAssemblyTypeName: Gamemanager, Assembly-CSharp
-        m_MethodName: RestartGame
+        m_MethodName: OnclickRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12342,7 +12342,7 @@ GameObject:
   - component: {fileID: 379318035}
   - component: {fileID: 379318034}
   - component: {fileID: 379318033}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (31)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12447,7 +12447,7 @@ GameObject:
   - component: {fileID: 380083351}
   - component: {fileID: 380083350}
   - component: {fileID: 380083349}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (48)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12772,7 +12772,7 @@ GameObject:
   - component: {fileID: 391057419}
   - component: {fileID: 391057418}
   - component: {fileID: 391057417}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12877,7 +12877,7 @@ GameObject:
   - component: {fileID: 398494110}
   - component: {fileID: 398494109}
   - component: {fileID: 398494108}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (123)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13121,7 +13121,7 @@ GameObject:
   - component: {fileID: 422715594}
   - component: {fileID: 422715593}
   - component: {fileID: 422715592}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (102)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13227,7 +13227,7 @@ GameObject:
   - component: {fileID: 425434551}
   - component: {fileID: 425434550}
   - component: {fileID: 425434549}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (126)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13417,7 +13417,7 @@ GameObject:
   - component: {fileID: 437944382}
   - component: {fileID: 437944381}
   - component: {fileID: 437944380}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (37)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13755,7 +13755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: 381}
+  m_AnchoredPosition: {x: 88, y: 221}
   m_SizeDelta: {x: 467.479, y: 134.3362}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &456731728
@@ -13864,7 +13864,7 @@ GameObject:
   - component: {fileID: 463486013}
   - component: {fileID: 463486012}
   - component: {fileID: 463486011}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (103)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13970,7 +13970,7 @@ GameObject:
   - component: {fileID: 470501677}
   - component: {fileID: 470501676}
   - component: {fileID: 470501675}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (76)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14223,7 +14223,7 @@ GameObject:
   - component: {fileID: 477612810}
   - component: {fileID: 477612809}
   - component: {fileID: 477612808}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (26)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14329,7 +14329,7 @@ GameObject:
   - component: {fileID: 477895642}
   - component: {fileID: 477895641}
   - component: {fileID: 477895640}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (121)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14643,7 +14643,7 @@ GameObject:
   - component: {fileID: 485297187}
   - component: {fileID: 485297186}
   - component: {fileID: 485297185}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (80)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14749,7 +14749,7 @@ GameObject:
   - component: {fileID: 505410658}
   - component: {fileID: 505410657}
   - component: {fileID: 505410656}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (30)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14878,7 +14878,6 @@ RectTransform:
   - {fileID: 1776216739}
   - {fileID: 456731727}
   - {fileID: 1145441259}
-  - {fileID: 718391160}
   - {fileID: 1837221100}
   - {fileID: 1150552720}
   m_Father: {fileID: 652859379}
@@ -14991,7 +14990,7 @@ GameObject:
   - component: {fileID: 516677951}
   - component: {fileID: 516677950}
   - component: {fileID: 516677949}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (16)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15097,7 +15096,7 @@ GameObject:
   - component: {fileID: 534765949}
   - component: {fileID: 534765948}
   - component: {fileID: 534765947}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (115)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15203,7 +15202,7 @@ GameObject:
   - component: {fileID: 535793472}
   - component: {fileID: 535793471}
   - component: {fileID: 535793470}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (21)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15818,7 +15817,7 @@ GameObject:
   - component: {fileID: 569263710}
   - component: {fileID: 569263709}
   - component: {fileID: 569263708}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (43)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15923,7 +15922,7 @@ GameObject:
   - component: {fileID: 575878716}
   - component: {fileID: 575878715}
   - component: {fileID: 575878714}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (99)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16029,7 +16028,7 @@ GameObject:
   - component: {fileID: 579392813}
   - component: {fileID: 579392812}
   - component: {fileID: 579392811}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (47)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16212,7 +16211,7 @@ GameObject:
   - component: {fileID: 590476711}
   - component: {fileID: 590476710}
   - component: {fileID: 590476709}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (88)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16475,6 +16474,98 @@ Transform:
   - {fileID: 322656125}
   m_Father: {fileID: 241118552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &614767279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 614767282}
+  - component: {fileID: 614767281}
+  - component: {fileID: 614767280}
+  m_Layer: 0
+  m_Name: DeadCam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!81 &614767280
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614767279}
+  m_Enabled: 1
+--- !u!20 &614767281
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614767279}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &614767282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614767279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.15085, y: 5.0492353, z: -157.13707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &632086210
 GameObject:
   m_ObjectHideFlags: 0
@@ -16566,7 +16657,7 @@ GameObject:
   - component: {fileID: 633618761}
   - component: {fileID: 633618760}
   - component: {fileID: 633618759}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (124)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18548,13 +18639,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1163191936}
+  - {fileID: 1152423124}
   - {fileID: 1733515234}
   - {fileID: 1137238768}
   - {fileID: 1278372606}
   - {fileID: 584868506}
   - {fileID: 655876108}
-  - {fileID: 1152423124}
   - {fileID: 78435468}
   - {fileID: 1686857071}
   - {fileID: 478305368}
@@ -18588,7 +18678,7 @@ GameObject:
   - component: {fileID: 653614514}
   - component: {fileID: 653614513}
   - component: {fileID: 653614512}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (42)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20336,7 +20426,7 @@ GameObject:
   - component: {fileID: 671382809}
   - component: {fileID: 671382808}
   - component: {fileID: 671382807}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (127)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20472,7 +20562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4777606630871252, guid: d86ca2f4159e6a942abd8dfc52b38395, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -154.691
+      value: -150.4
       objectReference: {fileID: 0}
     - target: {fileID: 4777606630871252, guid: d86ca2f4159e6a942abd8dfc52b38395, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20934,7 +21024,7 @@ GameObject:
   - component: {fileID: 709593722}
   - component: {fileID: 709593721}
   - component: {fileID: 709593720}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (20)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21206,139 +21296,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 596101377}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &718391159
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 718391160}
-  - component: {fileID: 718391163}
-  - component: {fileID: 718391162}
-  - component: {fileID: 718391161}
-  m_Layer: 5
-  m_Name: ReturnToGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &718391160
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718391159}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1388050424}
-  m_Father: {fileID: 505961626}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: 48}
-  m_SizeDelta: {x: 467.479, y: 134.3362}
-  m_Pivot: {x: 0, y: 0.5}
---- !u!114 &718391161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718391159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 718391162}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1712966775}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OnClickResume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &718391162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718391159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &718391163
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718391159}
-  m_CullTransparentMesh: 1
 --- !u!1 &718592576
 GameObject:
   m_ObjectHideFlags: 0
@@ -21351,7 +21308,7 @@ GameObject:
   - component: {fileID: 718592580}
   - component: {fileID: 718592579}
   - component: {fileID: 718592578}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (58)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21492,7 +21449,7 @@ GameObject:
   - component: {fileID: 720307880}
   - component: {fileID: 720307879}
   - component: {fileID: 720307878}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (98)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21688,7 +21645,7 @@ GameObject:
   - component: {fileID: 721087904}
   - component: {fileID: 721087903}
   - component: {fileID: 721087902}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (34)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22044,7 +22001,7 @@ GameObject:
   - component: {fileID: 735758306}
   - component: {fileID: 735758305}
   - component: {fileID: 735758304}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (62)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22252,7 +22209,7 @@ GameObject:
   - component: {fileID: 745329917}
   - component: {fileID: 745329916}
   - component: {fileID: 745329915}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (104)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22452,7 +22409,7 @@ GameObject:
   - component: {fileID: 754563217}
   - component: {fileID: 754563216}
   - component: {fileID: 754563215}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (110)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23169,7 +23126,7 @@ GameObject:
   - component: {fileID: 787654680}
   - component: {fileID: 787654679}
   - component: {fileID: 787654678}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (35)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -23644,7 +23601,7 @@ GameObject:
   - component: {fileID: 798693686}
   - component: {fileID: 798693685}
   - component: {fileID: 798693684}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (24)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -24345,7 +24302,7 @@ GameObject:
   - component: {fileID: 818605355}
   - component: {fileID: 818605354}
   - component: {fileID: 818605353}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -24494,7 +24451,7 @@ GameObject:
   - component: {fileID: 819600734}
   - component: {fileID: 819600733}
   - component: {fileID: 819600732}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (93)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24633,7 +24590,7 @@ GameObject:
   - component: {fileID: 823126084}
   - component: {fileID: 823126083}
   - component: {fileID: 823126082}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (34)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24974,7 +24931,7 @@ GameObject:
   - component: {fileID: 845692311}
   - component: {fileID: 845692310}
   - component: {fileID: 845692309}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (79)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25611,7 +25568,7 @@ GameObject:
   - component: {fileID: 869793946}
   - component: {fileID: 869793945}
   - component: {fileID: 869793944}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (22)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25790,7 +25747,7 @@ GameObject:
   - component: {fileID: 887995726}
   - component: {fileID: 887995725}
   - component: {fileID: 887995724}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (74)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25896,7 +25853,7 @@ GameObject:
   - component: {fileID: 889133251}
   - component: {fileID: 889133250}
   - component: {fileID: 889133249}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (69)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27730,7 +27687,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -27748,7 +27705,7 @@ GameObject:
   - component: {fileID: 898030426}
   - component: {fileID: 898030425}
   - component: {fileID: 898030424}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (12)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34253,7 +34210,7 @@ GameObject:
   - component: {fileID: 928893403}
   - component: {fileID: 928893402}
   - component: {fileID: 928893401}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (9)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34453,7 +34410,7 @@ GameObject:
   - component: {fileID: 946525675}
   - component: {fileID: 946525674}
   - component: {fileID: 946525673}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (72)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34638,7 +34595,7 @@ GameObject:
   - component: {fileID: 948471016}
   - component: {fileID: 948471015}
   - component: {fileID: 948471014}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (100)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34902,7 +34859,7 @@ GameObject:
   - component: {fileID: 983367062}
   - component: {fileID: 983367061}
   - component: {fileID: 983367060}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (78)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35044,7 +35001,7 @@ GameObject:
   - component: {fileID: 990287696}
   - component: {fileID: 990287695}
   - component: {fileID: 990287694}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -35149,7 +35106,7 @@ GameObject:
   - component: {fileID: 991914327}
   - component: {fileID: 991914326}
   - component: {fileID: 991914325}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (44)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35255,7 +35212,7 @@ GameObject:
   - component: {fileID: 995996633}
   - component: {fileID: 995996632}
   - component: {fileID: 995996631}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (119)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35361,7 +35318,7 @@ GameObject:
   - component: {fileID: 1000622676}
   - component: {fileID: 1000622675}
   - component: {fileID: 1000622674}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (77)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35467,7 +35424,7 @@ GameObject:
   - component: {fileID: 1003462513}
   - component: {fileID: 1003462512}
   - component: {fileID: 1003462511}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (55)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35652,7 +35609,7 @@ GameObject:
   - component: {fileID: 1011713528}
   - component: {fileID: 1011713527}
   - component: {fileID: 1011713526}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (81)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36064,7 +36021,7 @@ GameObject:
   - component: {fileID: 1023820378}
   - component: {fileID: 1023820377}
   - component: {fileID: 1023820376}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (49)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -36600,7 +36557,7 @@ GameObject:
   - component: {fileID: 1045829477}
   - component: {fileID: 1045829476}
   - component: {fileID: 1045829475}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (25)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36785,7 +36742,7 @@ GameObject:
   - component: {fileID: 1062390762}
   - component: {fileID: 1062390761}
   - component: {fileID: 1062390760}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (31)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36891,7 +36848,7 @@ GameObject:
   - component: {fileID: 1065387773}
   - component: {fileID: 1065387772}
   - component: {fileID: 1065387771}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (85)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36997,7 +36954,7 @@ GameObject:
   - component: {fileID: 1065791958}
   - component: {fileID: 1065791957}
   - component: {fileID: 1065791956}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (48)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -37763,7 +37720,7 @@ GameObject:
   - component: {fileID: 1104973721}
   - component: {fileID: 1104973720}
   - component: {fileID: 1104973719}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (15)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38204,7 +38161,7 @@ GameObject:
   - component: {fileID: 1127766332}
   - component: {fileID: 1127766331}
   - component: {fileID: 1127766330}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (57)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38310,7 +38267,7 @@ GameObject:
   - component: {fileID: 1127780263}
   - component: {fileID: 1127780262}
   - component: {fileID: 1127780261}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (91)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38450,7 +38407,7 @@ MonoBehaviour:
   bullet2Prefab: {fileID: 240538484034337729, guid: 07dff248d79099e458a465ed5dc79916, type: 3}
   bullet2maxPool: 30
   bullet2Pool: []
-  camera: {fileID: 0}
+  camera: {fileID: 614767279}
   gameOverUI: {fileID: 1152423123}
   wp1: {fileID: 1629597385}
   wp2: {fileID: 634851882}
@@ -38592,7 +38549,7 @@ GameObject:
   - component: {fileID: 1140049768}
   - component: {fileID: 1140049767}
   - component: {fileID: 1140049766}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (19)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38722,7 +38679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: 212}
+  m_AnchoredPosition: {x: 88, y: 52}
   m_SizeDelta: {x: 467.479, y: 134.3362}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1145441260
@@ -38855,7 +38812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: -264}
+  m_AnchoredPosition: {x: 88, y: -237}
   m_SizeDelta: {x: 467.479, y: 134.3362}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1150552721
@@ -39342,86 +39299,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1163191935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1163191936}
-  - component: {fileID: 1163191938}
-  - component: {fileID: 1163191937}
-  m_Layer: 5
-  m_Name: ESCText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1163191936
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163191935}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 652859379}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 563.743, y: 85.7635}
-  m_Pivot: {x: 1, y: 1}
---- !u!114 &1163191937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163191935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.12677503, g: 1, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\uC784\uBB34\uB098 \uC9C0\uB3C4\uAC00 \uAD81\uAE08\uD558\uB2E4\uBA74 ESC\uB97C
-    \uB204\uB974\uC790."
---- !u!222 &1163191938
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163191935}
-  m_CullTransparentMesh: 1
 --- !u!1 &1167691952
 GameObject:
   m_ObjectHideFlags: 0
@@ -39434,7 +39311,7 @@ GameObject:
   - component: {fileID: 1167691956}
   - component: {fileID: 1167691955}
   - component: {fileID: 1167691954}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (29)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -39540,7 +39417,7 @@ GameObject:
   - component: {fileID: 1169274704}
   - component: {fileID: 1169274703}
   - component: {fileID: 1169274702}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (25)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -39819,7 +39696,7 @@ GameObject:
   - component: {fileID: 1173399729}
   - component: {fileID: 1173399728}
   - component: {fileID: 1173399727}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (113)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40315,7 +40192,7 @@ GameObject:
   - component: {fileID: 1195968909}
   - component: {fileID: 1195968908}
   - component: {fileID: 1195968907}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (59)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40474,7 +40351,7 @@ GameObject:
   - component: {fileID: 1199813212}
   - component: {fileID: 1199813211}
   - component: {fileID: 1199813210}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (109)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40925,7 +40802,7 @@ GameObject:
   - component: {fileID: 1214188885}
   - component: {fileID: 1214188884}
   - component: {fileID: 1214188883}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (112)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41068,7 +40945,7 @@ GameObject:
   - component: {fileID: 1221012879}
   - component: {fileID: 1221012878}
   - component: {fileID: 1221012877}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (28)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -41173,7 +41050,7 @@ GameObject:
   - component: {fileID: 1222789431}
   - component: {fileID: 1222789430}
   - component: {fileID: 1222789429}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (71)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41400,7 +41277,7 @@ GameObject:
   - component: {fileID: 1235508882}
   - component: {fileID: 1235508881}
   - component: {fileID: 1235508880}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (105)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41613,7 +41490,7 @@ Transform:
   m_GameObject: {fileID: 1238670729}
   serializedVersion: 2
   m_LocalRotation: {x: -0.012991935, y: -0.7014417, z: 0.012897819, w: -0.7124917}
-  m_LocalPosition: {x: -2.5, y: 0.902, z: -123.72}
+  m_LocalPosition: {x: -25.34, y: 0.902, z: -156.49}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -42237,81 +42114,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255817432}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1258122598
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1258122599}
-  - component: {fileID: 1258122601}
-  - component: {fileID: 1258122600}
-  m_Layer: 5
-  m_Name: Image (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1258122599
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258122598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1776216739}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239.59, y: -154.75}
-  m_SizeDelta: {x: 404.66, y: 566.51}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1258122600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258122598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1258122601
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258122598}
-  m_CullTransparentMesh: 1
 --- !u!1 &1261521971
 GameObject:
   m_ObjectHideFlags: 0
@@ -43226,7 +43028,7 @@ GameObject:
   - component: {fileID: 1296605745}
   - component: {fileID: 1296605744}
   - component: {fileID: 1296605743}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (86)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43398,7 +43200,7 @@ GameObject:
   - component: {fileID: 1307944024}
   - component: {fileID: 1307944023}
   - component: {fileID: 1307944022}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (39)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43737,7 +43539,7 @@ GameObject:
   - component: {fileID: 1326242698}
   - component: {fileID: 1326242697}
   - component: {fileID: 1326242696}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (44)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -43842,7 +43644,7 @@ GameObject:
   - component: {fileID: 1326883706}
   - component: {fileID: 1326883705}
   - component: {fileID: 1326883704}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (122)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43983,7 +43785,7 @@ GameObject:
   - component: {fileID: 1327006347}
   - component: {fileID: 1327006346}
   - component: {fileID: 1327006345}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (50)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44089,7 +43891,7 @@ GameObject:
   - component: {fileID: 1332087128}
   - component: {fileID: 1332087127}
   - component: {fileID: 1332087126}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (53)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44316,7 +44118,7 @@ GameObject:
   - component: {fileID: 1342235722}
   - component: {fileID: 1342235721}
   - component: {fileID: 1342235720}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (38)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44561,7 +44363,7 @@ GameObject:
   - component: {fileID: 1353556236}
   - component: {fileID: 1353556235}
   - component: {fileID: 1353556234}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (118)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44667,7 +44469,7 @@ GameObject:
   - component: {fileID: 1353609428}
   - component: {fileID: 1353609427}
   - component: {fileID: 1353609426}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (32)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44853,7 +44655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1361137711}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MainStageGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45008,7 +44810,7 @@ GameObject:
   - component: {fileID: 1364580263}
   - component: {fileID: 1364580262}
   - component: {fileID: 1364580261}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (54)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45102,6 +44904,78 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364580259}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1367012114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367012115}
+  - component: {fileID: 1367012117}
+  - component: {fileID: 1367012116}
+  m_Layer: 5
+  m_Name: PlayerPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1367012115
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367012114}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1776216739}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_SizeDelta: {x: 892.5373, y: 892.5373}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1367012116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367012114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6745098}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 2501a338238730e4e82baef3fc6e77ef, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1367012117
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367012114}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1368134448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45368,7 +45242,7 @@ GameObject:
   - component: {fileID: 1374410675}
   - component: {fileID: 1374410674}
   - component: {fileID: 1374410673}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (61)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45792,7 +45666,7 @@ GameObject:
   - component: {fileID: 1380289218}
   - component: {fileID: 1380289217}
   - component: {fileID: 1380289216}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (129)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45886,85 +45760,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380289214}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1388050423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1388050424}
-  - component: {fileID: 1388050426}
-  - component: {fileID: 1388050425}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1388050424
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388050423}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 718391160}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00024414062, y: 0.00072384}
-  m_SizeDelta: {x: 467.48, y: 145.94}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1388050425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388050423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 300
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\uB4A4 \uB85C \uAC00 \uAE30"
---- !u!222 &1388050426
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388050423}
-  m_CullTransparentMesh: 1
 --- !u!1 &1393108676
 GameObject:
   m_ObjectHideFlags: 0
@@ -46013,7 +45808,7 @@ GameObject:
   - component: {fileID: 1393713198}
   - component: {fileID: 1393713197}
   - component: {fileID: 1393713196}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (11)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46119,7 +45914,7 @@ GameObject:
   - component: {fileID: 1398599174}
   - component: {fileID: 1398599173}
   - component: {fileID: 1398599172}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (45)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -46318,7 +46113,7 @@ GameObject:
   - component: {fileID: 1400416548}
   - component: {fileID: 1400416547}
   - component: {fileID: 1400416546}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (23)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -46496,7 +46291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -58.39
+      value: -117.33
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46504,11 +46299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -108.12
+      value: -106.42
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -46516,7 +46311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -46528,7 +46323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -46736,7 +46531,7 @@ GameObject:
   - component: {fileID: 1411617752}
   - component: {fileID: 1411617751}
   - component: {fileID: 1411617750}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (14)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46842,7 +46637,7 @@ GameObject:
   - component: {fileID: 1413967694}
   - component: {fileID: 1413967693}
   - component: {fileID: 1413967692}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (56)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47001,7 +46796,7 @@ GameObject:
   - component: {fileID: 1429282490}
   - component: {fileID: 1429282489}
   - component: {fileID: 1429282488}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (83)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47107,7 +46902,7 @@ GameObject:
   - component: {fileID: 1430171124}
   - component: {fileID: 1430171123}
   - component: {fileID: 1430171122}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (95)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47415,7 +47210,7 @@ GameObject:
   - component: {fileID: 1445793636}
   - component: {fileID: 1445793635}
   - component: {fileID: 1445793634}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (40)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -47520,7 +47315,7 @@ GameObject:
   - component: {fileID: 1449794848}
   - component: {fileID: 1449794847}
   - component: {fileID: 1449794846}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (117)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47626,7 +47421,7 @@ GameObject:
   - component: {fileID: 1450682370}
   - component: {fileID: 1450682369}
   - component: {fileID: 1450682368}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (41)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47732,7 +47527,7 @@ GameObject:
   - component: {fileID: 1452188539}
   - component: {fileID: 1452188538}
   - component: {fileID: 1452188537}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (120)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47891,7 +47686,7 @@ GameObject:
   - component: {fileID: 1462783839}
   - component: {fileID: 1462783838}
   - component: {fileID: 1462783837}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (84)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47997,7 +47792,7 @@ GameObject:
   - component: {fileID: 1469600392}
   - component: {fileID: 1469600391}
   - component: {fileID: 1469600390}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (65)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48103,7 +47898,7 @@ GameObject:
   - component: {fileID: 1474066370}
   - component: {fileID: 1474066369}
   - component: {fileID: 1474066368}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (40)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48615,7 +48410,7 @@ GameObject:
   - component: {fileID: 1481085942}
   - component: {fileID: 1481085941}
   - component: {fileID: 1481085940}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (89)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49168,7 +48963,7 @@ GameObject:
   - component: {fileID: 1518426599}
   - component: {fileID: 1518426598}
   - component: {fileID: 1518426597}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (108)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49560,7 +49355,7 @@ GameObject:
   - component: {fileID: 1561153247}
   - component: {fileID: 1561153246}
   - component: {fileID: 1561153245}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (107)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50018,7 +49813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4487492164278536, guid: 4b4193be53e751147ac305034c03fe35, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -135.07338
+      value: -137.4
       objectReference: {fileID: 0}
     - target: {fileID: 4487492164278536, guid: 4b4193be53e751147ac305034c03fe35, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50413,7 +50208,7 @@ GameObject:
   - component: {fileID: 1596206609}
   - component: {fileID: 1596206608}
   - component: {fileID: 1596206607}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (23)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50825,6 +50620,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611170531}
   m_CullTransparentMesh: 1
+--- !u!1 &1611312362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611312363}
+  - component: {fileID: 1611312365}
+  - component: {fileID: 1611312364}
+  m_Layer: 5
+  m_Name: Image (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1611312363
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611312362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1776216739}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 506, y: -64}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1611312364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611312362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9793825, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ecb47c369496a89428880f58635acf87, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1611312365
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611312362}
+  m_CullTransparentMesh: 1
 --- !u!1 &1622671077
 GameObject:
   m_ObjectHideFlags: 0
@@ -50837,7 +50707,7 @@ GameObject:
   - component: {fileID: 1622671081}
   - component: {fileID: 1622671080}
   - component: {fileID: 1622671079}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (114)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51399,7 +51269,7 @@ GameObject:
   - component: {fileID: 1642992854}
   - component: {fileID: 1642992853}
   - component: {fileID: 1642992852}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (35)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51505,7 +51375,7 @@ GameObject:
   - component: {fileID: 1646352615}
   - component: {fileID: 1646352614}
   - component: {fileID: 1646352613}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (67)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51648,7 +51518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1653319392}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MainStageInWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51721,7 +51591,7 @@ GameObject:
   - component: {fileID: 1657573990}
   - component: {fileID: 1657573989}
   - component: {fileID: 1657573988}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (68)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52198,7 +52068,7 @@ GameObject:
   - component: {fileID: 1667605778}
   - component: {fileID: 1667605777}
   - component: {fileID: 1667605776}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (13)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52384,7 +52254,7 @@ GameObject:
   - component: {fileID: 1671712121}
   - component: {fileID: 1671712120}
   - component: {fileID: 1671712119}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (17)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52490,7 +52360,7 @@ GameObject:
   - component: {fileID: 1674178315}
   - component: {fileID: 1674178314}
   - component: {fileID: 1674178313}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (92)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53066,6 +52936,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691186053}
   m_CullTransparentMesh: 1
+--- !u!1 &1694384840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1694384841}
+  - component: {fileID: 1694384843}
+  - component: {fileID: 1694384842}
+  m_Layer: 5
+  m_Name: Text (Legacy) (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1694384841
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694384840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1776216739}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 722.79626, y: -64.2}
+  m_SizeDelta: {x: 301.3694, y: 116.6451}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1694384842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694384840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.39228725, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ": \uD50C\uB808\uC774\uC5B4 \uC704\uCE58"
+--- !u!222 &1694384843
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694384840}
+  m_CullTransparentMesh: 1
 --- !u!1 &1697305012
 GameObject:
   m_ObjectHideFlags: 0
@@ -53419,7 +53368,7 @@ GameObject:
   - component: {fileID: 1702886765}
   - component: {fileID: 1702886764}
   - component: {fileID: 1702886763}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (63)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53955,6 +53904,7 @@ MonoBehaviour:
   MapExplanation: {fileID: 1776216738}
   MissionText: {fileID: 1355491170}
   RealToLobby: {fileID: 1815430938}
+  ESCCount: 0
 --- !u!4 &1712966776
 Transform:
   m_ObjectHideFlags: 0
@@ -54373,7 +54323,7 @@ GameObject:
   - component: {fileID: 1742260566}
   - component: {fileID: 1742260565}
   - component: {fileID: 1742260564}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (30)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -54478,7 +54428,7 @@ GameObject:
   - component: {fileID: 1743568792}
   - component: {fileID: 1743568791}
   - component: {fileID: 1743568790}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (106)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54615,7 +54565,7 @@ GameObject:
   - component: {fileID: 1754402610}
   - component: {fileID: 1754402609}
   - component: {fileID: 1754402608}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (37)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -54774,12 +54724,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1367012115}
   - {fileID: 1261521972}
   - {fileID: 253143812}
-  - {fileID: 1258122599}
   - {fileID: 7811572}
+  - {fileID: 1611312363}
   - {fileID: 1157945284}
   - {fileID: 764227016}
+  - {fileID: 1694384841}
   - {fileID: 1590305931}
   m_Father: {fileID: 505961626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54838,7 +54790,7 @@ GameObject:
   - component: {fileID: 1778615091}
   - component: {fileID: 1778615090}
   - component: {fileID: 1778615089}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (33)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55223,7 +55175,7 @@ GameObject:
   - component: {fileID: 1790067375}
   - component: {fileID: 1790067374}
   - component: {fileID: 1790067373}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (36)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -55813,7 +55765,7 @@ GameObject:
   - component: {fileID: 1836553667}
   - component: {fileID: 1836553666}
   - component: {fileID: 1836553665}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (42)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -55942,7 +55894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: -119}
+  m_AnchoredPosition: {x: 88, y: -98}
   m_SizeDelta: {x: 467.479, y: 134.3362}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1837221101
@@ -56755,7 +56707,7 @@ GameObject:
   - component: {fileID: 1860678886}
   - component: {fileID: 1860678885}
   - component: {fileID: 1860678884}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (96)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56861,7 +56813,7 @@ GameObject:
   - component: {fileID: 1867293298}
   - component: {fileID: 1867293297}
   - component: {fileID: 1867293296}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (36)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56967,7 +56919,7 @@ GameObject:
   - component: {fileID: 1868470447}
   - component: {fileID: 1868470446}
   - component: {fileID: 1868470445}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (21)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -57420,7 +57372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3992058561654064293, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58028,7 +57980,7 @@ GameObject:
   - component: {fileID: 1913216324}
   - component: {fileID: 1913216323}
   - component: {fileID: 1913216322}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (101)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58134,7 +58086,7 @@ GameObject:
   - component: {fileID: 1913641112}
   - component: {fileID: 1913641111}
   - component: {fileID: 1913641110}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (128)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58409,7 +58361,7 @@ GameObject:
   - component: {fileID: 1918015595}
   - component: {fileID: 1918015594}
   - component: {fileID: 1918015593}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -58514,7 +58466,7 @@ GameObject:
   - component: {fileID: 1922613457}
   - component: {fileID: 1922613456}
   - component: {fileID: 1922613455}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (10)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58620,7 +58572,7 @@ GameObject:
   - component: {fileID: 1922652962}
   - component: {fileID: 1922652961}
   - component: {fileID: 1922652960}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (32)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -58860,7 +58812,7 @@ GameObject:
   - component: {fileID: 1928044248}
   - component: {fileID: 1928044247}
   - component: {fileID: 1928044246}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (46)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -59183,7 +59135,7 @@ GameObject:
   - component: {fileID: 1956595373}
   - component: {fileID: 1956595372}
   - component: {fileID: 1956595371}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (87)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59548,7 +59500,7 @@ GameObject:
   - component: {fileID: 1971119398}
   - component: {fileID: 1971119397}
   - component: {fileID: 1971119396}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (60)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59654,7 +59606,7 @@ GameObject:
   - component: {fileID: 1975688799}
   - component: {fileID: 1975688798}
   - component: {fileID: 1975688797}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (27)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59867,7 +59819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1985098821}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MainStageOutWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59905,7 +59857,7 @@ GameObject:
   - component: {fileID: 1987472582}
   - component: {fileID: 1987472581}
   - component: {fileID: 1987472580}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -60104,7 +60056,7 @@ GameObject:
   - component: {fileID: 1994726630}
   - component: {fileID: 1994726629}
   - component: {fileID: 1994726628}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (90)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60321,7 +60273,7 @@ GameObject:
   - component: {fileID: 2000264480}
   - component: {fileID: 2000264479}
   - component: {fileID: 2000264478}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (38)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -60604,7 +60556,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1135148036}
         m_TargetAssemblyTypeName: Gamemanager, Assembly-CSharp
-        m_MethodName: To_Lobby
+        m_MethodName: onClickToLobby
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -60758,6 +60710,113 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024335289}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2024584248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2024584249}
+  - component: {fileID: 2024584252}
+  - component: {fileID: 2024584251}
+  - component: {fileID: 2024584250}
+  m_Layer: 7
+  m_Name: PlayerPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2024584249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024584248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 12.39, z: 0}
+  m_LocalScale: {x: 5.416928, y: 0.028709715, z: 5.416928}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5654046643757699376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2024584250
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024584248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &2024584251
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024584248}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 321e74d1984becb4391b3bdd68dec1dc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2024584252
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024584248}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2026127032
 GameObject:
   m_ObjectHideFlags: 0
@@ -60770,7 +60829,7 @@ GameObject:
   - component: {fileID: 2026127036}
   - component: {fileID: 2026127035}
   - component: {fileID: 2026127034}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (24)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60912,7 +60971,7 @@ GameObject:
   - component: {fileID: 2033949895}
   - component: {fileID: 2033949894}
   - component: {fileID: 2033949893}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -61633,7 +61692,7 @@ GameObject:
   - component: {fileID: 2065478424}
   - component: {fileID: 2065478423}
   - component: {fileID: 2065478422}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (64)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61975,7 +62034,7 @@ GameObject:
   - component: {fileID: 2077527074}
   - component: {fileID: 2077527073}
   - component: {fileID: 2077527072}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -62080,7 +62139,7 @@ GameObject:
   - component: {fileID: 2077773614}
   - component: {fileID: 2077773613}
   - component: {fileID: 2077773612}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (51)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -62221,7 +62280,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -62239,7 +62298,7 @@ GameObject:
   - component: {fileID: 2087512334}
   - component: {fileID: 2087512333}
   - component: {fileID: 2087512332}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (26)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -62641,8 +62700,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 50.60694, y: 1.3834351, z: 63.961983}
-  m_Center: {x: -1.9542007, y: 0.19171757, z: -9.150196}
+  m_Size: {x: 50.60694, y: 1.3834351, z: 55.00663}
+  m_Center: {x: -1.9542007, y: 0.19171757, z: -4.6725197}
 --- !u!114 &2096035119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62806,7 +62865,7 @@ GameObject:
   - component: {fileID: 2111548640}
   - component: {fileID: 2111548639}
   - component: {fileID: 2111548638}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (52)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -62912,7 +62971,7 @@ GameObject:
   - component: {fileID: 2115285924}
   - component: {fileID: 2115285923}
   - component: {fileID: 2115285922}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Plane (75)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -63018,7 +63077,7 @@ GameObject:
   - component: {fileID: 2119433366}
   - component: {fileID: 2119433365}
   - component: {fileID: 2119433364}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -63746,7 +63805,7 @@ GameObject:
   - component: {fileID: 2143553170}
   - component: {fileID: 2143553169}
   - component: {fileID: 2143553168}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -69190,7 +69249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6618963844113288483, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       propertyPath: p_power
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6618963844113288483, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       propertyPath: gameover
@@ -69262,7 +69321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8355444929414586777, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.6
+      value: -11.267
       objectReference: {fileID: 0}
     - target: {fileID: 8355444929414586777, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -69270,7 +69329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8355444929414586777, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -158.6
+      value: -156.22
       objectReference: {fileID: 0}
     - target: {fileID: 8355444929414586777, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -69306,7 +69365,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8355444929414586777, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2024584249}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3148156774252426539, guid: b1a9ed2e71f6be7428a2597483df140d, type: 3}
       insertIndex: -1
@@ -71014,6 +71076,67 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1446861444562118728}
   m_SourcePrefab: {fileID: 100100000, guid: ddfce0decbaba3b47b65c5a5be50d96c, type: 3}
+--- !u!1001 &8983992709900464936
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 908973590161179192, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 105.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -105.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680966130671785403, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073051148617288538, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
+      propertyPath: m_Name
+      value: MiniMapCamera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3807c4f9c3afb0044b636b3d95f5e95d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -71034,4 +71157,5 @@ SceneRoots:
   - {fileID: 12584216}
   - {fileID: 146925028}
   - {fileID: 353679517}
-  - {fileID: 23940457}
+  - {fileID: 8983992709900464936}
+  - {fileID: 614767282}

@@ -13,7 +13,8 @@ public class UIManager : MonoBehaviour
     public GameObject MapExplanation;
     public GameObject MissionText;
     public GameObject RealToLobby;
-
+    public int ESCCount = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,18 +26,21 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            EscUI.SetActive(true);
-            MapExplanation.SetActive(false);
-            MissionText.SetActive(false);
-            Time.timeScale = 0;
+            ESCCount++;
+            if(ESCCount % 2!=0)
+            {
+                EscUI.SetActive(true);
+                MapExplanation.SetActive(false);
+                MissionText.SetActive(false);
+                Time.timeScale = 0;
+
+            }
+            else if(ESCCount % 2==0)
+            {
+                EscUI.SetActive(false);
+                Time.timeScale = 1;
+            }
         }
-    }
-
-
-    public void OnClickResume() // 돌아가기
-    {
-        Time.timeScale = 1;
-        EscUI.SetActive(false);
     }
 
     public void OnFlashResume() // 후레쉬 습득하고 UI창 나온거 닫기, 총 설명 UI창 닫기

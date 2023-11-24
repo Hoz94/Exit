@@ -27,6 +27,7 @@ public class Main_Menu : MonoBehaviour
     {
         Explanation.SetActive(true);
         StartCoroutine(FadeInImage());
+        Debug.Log("게임스타트");
     }
 
     public void OnClickRealStartGame()

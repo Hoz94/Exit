@@ -26,7 +26,7 @@ public class TypingEffect : MonoBehaviour
         for(int i=0; i<=m_text.Length; i++)
         {
             text.text=m_text.Substring(0,i);
-            yield return new WaitForSeconds(0.07f);
+            yield return new WaitForSeconds(0.03f);
         }
         StartBtn.SetActive(true);
     }

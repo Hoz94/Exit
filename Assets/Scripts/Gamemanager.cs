@@ -194,6 +194,17 @@ public class Gamemanager : MonoBehaviour
         gameOverUI.SetActive(true);
         player.gameObject.SetActive(false);
     }
+
+    public void OnclickRestart()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void onClickToLobby()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void bulletminus() // 총 쏠 때 총알 이미지 하나씩 없어지는거
     {
         for(int i = 0; i < BulletImg.Count(); i++)
