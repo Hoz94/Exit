@@ -25,6 +25,7 @@ public class Main_Menu : MonoBehaviour
 
     public void OnClickStartGame()
     {
+        SetImageAplha(0f);
         Explanation.SetActive(true);
         StartCoroutine(FadeInImage());
         Debug.Log("게임스타트");
@@ -40,7 +41,7 @@ public class Main_Menu : MonoBehaviour
         float alpha = 0f;
         while (alpha < 1f)
         {
-            alpha += fadeSpeed * Time.deltaTime;
+            alpha += fadeSpeed * Time.unscaledDeltaTime;
             SetImageAplha(alpha);
             yield return null;
         }
