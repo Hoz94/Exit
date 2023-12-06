@@ -18,9 +18,9 @@ public class Gamemanager : MonoBehaviour
     public int bullet2maxPool = 30;
     public List<GameObject> bullet2Pool = new List<GameObject>();
 
-    public static Gamemanager _instance; // ½Ì±ÛÅæ
+    public static Gamemanager _instance;
 
-    public GameObject camera;
+    public GameObject DeadCam;
     public GameObject gameOverUI;
     public GameObject wp1;
     public GameObject wp2;
@@ -138,7 +138,7 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-    public void CreateBullet2Pooling() // ±â°üÃÑ ÃÑ¾Ë Ç®¸µ
+    public void CreateBullet2Pooling() // ½ºÅ³ ÃÑ¾Ë Ç®¸µ
     {
         GameObject object2Pools = new GameObject("SkillObjectPools");
 
@@ -188,7 +188,7 @@ public class Gamemanager : MonoBehaviour
     public void GameOver() // Á×¾úÀ» ¶§
     {
         Time.timeScale = 0;
-        camera.SetActive(true);
+        DeadCam.SetActive(true);
         //Cursor.visible = true;
         //Cursor.lockState = CursorLockMode.None;
         gameOverUI.SetActive(true);

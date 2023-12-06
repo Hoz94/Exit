@@ -13,12 +13,22 @@ public class TypingEffect : MonoBehaviour
     IEnumerator texteffect()
     {
         yield return new WaitForSecondsRealtime(2f);
-        WaitForSecondsRealtime wait = new WaitForSecondsRealtime(0.03f); // waitforseconds 최적화 작업. 검색해봐야 함.
-        for (int i=0; i<=m_text.Length; i++)
+        WaitForSecondsRealtime Wait = new WaitForSecondsRealtime(0.03f); // waitforseconds 최적화 작업. 검색해봐야 함.
+        int length=m_text.Length;
+        int index = 0;
+
+        while (index<=length)
+        {
+            text.text = m_text.Substring(0, index);
+            index++;
+            yield return Wait;
+        }
+
+/*        for (int i=0; i<=m_text.Length; i++)
         {
             text.text=m_text.Substring(0,i);
-            yield return wait;
-        }
+            yield return Wait;
+        }*/
         StartBtn.SetActive(true);
     }
 

@@ -171,7 +171,7 @@ public class Boss : MonoBehaviour
         if(collision.gameObject.CompareTag("Bullet"))
         {
             isTrace = true;
-            isBossHit = true;
+            //isBossHit = true;
             Bullet bullet = collision.gameObject.GetComponent<Bullet>();
             OnHit(bullet.damage);
 

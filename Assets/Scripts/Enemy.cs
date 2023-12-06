@@ -29,7 +29,6 @@ public class Enemy : MonoBehaviour
     public bool isDead = false;
     public bool isTrace = false;
     public bool isAttack = false;
-    public bool isHit = false;
     public bool isWalk = false;
 
     public bool isatk = false;
@@ -66,8 +65,6 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(!isDead) { Theaudio.Play(); }
-
         if (isDead)
         {
             return;
@@ -94,7 +91,7 @@ public class Enemy : MonoBehaviour
     
     void Patrol()
     {
-        if (isTrace == false && isAttack == false && isHit == false)
+        if (isTrace == false && isAttack == false)
         {
             
             Transform currentWaypoint = waypoints[currentWaypointIndex];
@@ -114,7 +111,7 @@ public class Enemy : MonoBehaviour
 
     void Trace()
     {
-        if (isTrace == true && isHit == false)
+        if (isTrace == true)
         {
             nvAgent.acceleration = 8;
             nvAgent.speed = 7f;
@@ -153,11 +150,7 @@ public class Enemy : MonoBehaviour
 
     void OnHit(int damage)
     {
-        if(!isHit)
-        {
-            isHit = true;
-            StartCoroutine(OnHitCo(damage));
-        }
+        StartCoroutine(OnHitCo(damage));
     }
 
     IEnumerator OnHitCo(int damage)
@@ -173,7 +166,6 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(stoptime);
 
         nvAgent.speed = patrolSpeed;
-        isHit = false;
     }
 
     void HandleHP()
@@ -184,13 +176,12 @@ public class Enemy : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             isTrace = true;
             isAttack = true;
             Bullet bullet = collision.gameObject.GetComponent<Bullet>();
             OnHit(bullet.damage);
-
         }
     }
 }

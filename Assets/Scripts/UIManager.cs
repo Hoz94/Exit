@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject MapExplanation;
     public GameObject MissionText;
     public GameObject RealToLobby;
+    public GameObject SureToGoLobby;
     public int ESCCount = 0;
     
     // Start is called before the first frame update
@@ -26,19 +27,29 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ESCCount++;
-            if(ESCCount % 2!=0)
+            if (!SureToGoLobby.activeSelf)
             {
-                EscUI.SetActive(true);
-                MapExplanation.SetActive(false);
-                MissionText.SetActive(false);
-                Time.timeScale = 0;
+                ESCCount++;
+                if (ESCCount % 2 != 0)
+                {
+                    EscUI.SetActive(true);
+                    MapExplanation.SetActive(false);
+                    MissionText.SetActive(false);
+                    SureToGoLobby.SetActive(false);
+                    Time.timeScale = 0;
 
+                }
+                else if (ESCCount % 2 == 0)
+                {
+                    EscUI.SetActive(false);
+                    ESCCount = 0;
+                    Time.timeScale = 1;
+                }
             }
-            else if(ESCCount % 2==0)
+
+            else if(SureToGoLobby.activeSelf)
             {
-                EscUI.SetActive(false);
-                Time.timeScale = 1;
+                SureToGoLobby.SetActive(false);
             }
         }
     }
