@@ -8,6 +8,7 @@ public class Area_1 : MonoBehaviour
     public GameObject Area_2Trigger;
     public GameObject Area_3Trigger;
     public GameObject Area_4Trigger;
+    // test
     // Start is called before the first frame update
     void Start()
     {
